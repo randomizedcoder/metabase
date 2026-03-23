@@ -25,8 +25,10 @@
 
 (set! *warn-on-reflection* true)
 
-(defn- check-premium-token! []
-  (premium-features/assert-has-feature :serialization (trs "Serialization")))
+(defn- check-premium-token!
+  "No-op: serialization is available to all editions."
+  []
+  nil)
 
 (mu/defn v2-load-internal!
   "SerDes v2 load entry point for internal users.
