@@ -1,0 +1,23 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1774286934,
+        "narHash": "sha256-9lflLKorBdcLw7fRTKnnCaW3pCu40ppmU0vrID2pG+o=",
+        "path": "/home/das/Downloads/n/nixpkgs",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/das/Downloads/n/nixpkgs",
+        "type": "path"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
