@@ -73,7 +73,6 @@
    :scim                       (deferred-tru "SCIM configuration")
    :semantic-search            (deferred-tru "Semantic Search")
    :table-data-editing         (deferred-tru "Table Data Editing")
-   :tenants                    (deferred-tru "Tenants")
    :upload-management          (deferred-tru "Upload Management")
    :database-routing           (deferred-tru "Database Routing")
    :cloud-custom-smtp          (deferred-tru "Custom SMTP")
@@ -140,7 +139,7 @@
    "/serialization"                (api.macros/ns-handler metabase-enterprise.serialization.api/routes)
    "/stale"                        (premium-handler metabase-enterprise.stale.api/routes :collection-cleanup)
    "/support-access-grant" (premium-handler metabase-enterprise.support-access-grants.api/routes :support-users)
-   "/tenant"                       (premium-handler metabase-enterprise.tenants.api/routes :tenants)
+   "/tenant"                       (api.macros/ns-handler metabase-enterprise.tenants.api/routes)
    "/upload-management"            (premium-handler metabase-enterprise.upload-management.api/routes :upload-management)
    "/workspace"                    (premium-handler metabase-enterprise.workspaces.api/routes :workspaces)})
 ;;; ↑↑↑ KEEP THIS SORTED OR ELSE ↑↑↑

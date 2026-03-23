@@ -72,5 +72,4 @@
   :export?            false
   :setter             update-use-tenants!
   :default            false
-  :feature            :tenants
   :can-read-from-env? false)
