@@ -20,7 +20,7 @@ import os
 import re
 import sys
 import tempfile
-from datetime import datetime
+from datetime import datetime, timezone
 
 import psycopg2
 import psycopg2.extras
@@ -154,7 +154,7 @@ def fetch_dashboards(conn, name=None, include_archived=False):
     query = """
         SELECT id, name, description, parameters, archived, archived_directly,
                collection_id, auto_apply_filters, cache_ttl, enable_embedding,
-               embedding_params, embedding_type, public_uuid, made_public_by_id,
+               embedding_params, public_uuid, made_public_by_id,
                position, collection_position, width, show_in_getting_started,
                caveats, points_of_interest, initially_published_at,
                created_at, updated_at, entity_id, creator_id
@@ -184,7 +184,7 @@ def fetch_tabs(conn, dashboard_id):
     """Fetch tabs for a dashboard, ordered by position then id."""
     with conn.cursor(cursor_factory=psycopg2.extras.DictCursor) as cur:
         cur.execute(
-            """SELECT id, name, position, entity_id, options, created_at, updated_at
+            """SELECT id, name, position, entity_id, created_at, updated_at
                FROM dashboard_tab
                WHERE dashboard_id = %(dashboard_id)s
                ORDER BY position ASC, id ASC""",
@@ -341,7 +341,6 @@ def export_dashboard(conn, dashboard_row, raw_ids=False, include_cards=False):
         "points_of_interest": d["points_of_interest"],
         "parameters": parse_json_column(d["parameters"]) or [],
         "archived_directly": d["archived_directly"],
-        "embedding_type": d.get("embedding_type"),
         "initially_published_at": format_timestamp(d.get("initially_published_at")),
         "width": d.get("width", "fixed"),
     }
@@ -435,7 +434,7 @@ def write_dashboard(dashboard_json, dashboard_id, output_dir, compact=False):
 def write_manifest(dashboards_info, output_dir):
     """Write manifest.json summarizing the export."""
     manifest = {
-        "exported_at": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "exported_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "dashboard_count": len(dashboards_info),
         "dashboards": dashboards_info,
     }

@@ -1,0 +1,495 @@
+{
+  "archived": false,
+  "archived_directly": false,
+  "auto_apply_filters": true,
+  "caveats": null,
+  "collection_id": "WZA60dv_39WK7GrRymjJU",
+  "collection_position": null,
+  "created_at": "2025-12-02T07:36:14.799357Z",
+  "creator_id": "doug.dominiak@siden.io",
+  "dashcards": [
+    {
+      "action_id": null,
+      "card_id": "_K_-0MEElnUN2tDkV3IzA",
+      "col": 0,
+      "created_at": "2025-12-02T07:39:09.840443Z",
+      "dashboard_tab_id": "R0oSxvcon7o7SNwBJL01H",
+      "entity_id": "3jpjg1hldf_mL9S5J4oLC",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 855,
+          "parameter_id": "54696388",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 855,
+          "parameter_id": "ea40e988",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 855,
+          "parameter_id": "39df2e6d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 855,
+          "parameter_id": "9549ec96",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {}
+    },
+    {
+      "action_id": null,
+      "card_id": "2zQex2_j5fds_k1Bsvdho",
+      "col": 0,
+      "created_at": "2025-12-02T07:39:09.840443Z",
+      "dashboard_tab_id": "5FqmylZGBmK51sAs1duX2",
+      "entity_id": "utVEv0Fk0Hg90NypcgdYq",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 854,
+          "parameter_id": "54696388",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 854,
+          "parameter_id": "ea40e988",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 854,
+          "parameter_id": "39df2e6d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 854,
+          "parameter_id": "9549ec96",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {}
+    },
+    {
+      "action_id": null,
+      "card_id": "FwS9H-xpQvb6PslVhPmlr",
+      "col": 0,
+      "created_at": "2025-12-02T07:41:59.835312Z",
+      "dashboard_tab_id": "wVG-acBN8brycVAkCYOjh",
+      "entity_id": "llj0cvtw3Yq9yr59lYrzw",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 849,
+          "parameter_id": "54696388",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "mtn_timestamp",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 849,
+          "parameter_id": "ea40e988",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "d1.stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 849,
+          "parameter_id": "39df2e6d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "d1.sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 849,
+          "parameter_id": "9549ec96",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "d1.sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {}
+    },
+    {
+      "action_id": null,
+      "card_id": "OyT-dCyt3PjXaEiL5sD6E",
+      "col": 0,
+      "created_at": "2025-12-02T07:41:59.835312Z",
+      "dashboard_tab_id": "wVG-acBN8brycVAkCYOjh",
+      "entity_id": "maoNcspqPeq06VBO7MUw1",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 848,
+          "parameter_id": "54696388",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "mtn_timestamp",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 848,
+          "parameter_id": "ea40e988",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "d1.stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 848,
+          "parameter_id": "39df2e6d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "d1.sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 848,
+          "parameter_id": "9549ec96",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "d1.sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 11,
+      "series": [],
+      "size_x": 24,
+      "size_y": 13,
+      "visualization_settings": {}
+    },
+    {
+      "action_id": null,
+      "card_id": "myRQnrEzBQI7kPZ3BLKiA",
+      "col": 0,
+      "created_at": "2025-12-02T07:49:22.896442Z",
+      "dashboard_tab_id": "wVG-acBN8brycVAkCYOjh",
+      "entity_id": "UnUc12fdmpbdvm85kJoJQ",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 851,
+          "parameter_id": "54696388",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 851,
+          "parameter_id": "ea40e988",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "d1.stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 851,
+          "parameter_id": "39df2e6d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "d1.sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 851,
+          "parameter_id": "9549ec96",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "d1.sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 24,
+      "series": [],
+      "size_x": 24,
+      "size_y": 13,
+      "visualization_settings": {}
+    }
+  ],
+  "description": null,
+  "embedding_params": null,
+  "enable_embedding": false,
+  "entity_id": "gWSm7H7PFEoJC4S1u2ubW",
+  "initially_published_at": null,
+  "made_public_by_id": null,
+  "name": "Test Dashboard - Channel Status",
+  "parameters": [
+    {
+      "default": "past7days~",
+      "id": "54696388",
+      "name": "Date Range",
+      "sectionId": "date",
+      "slug": "date_range",
+      "type": "date/all-options"
+    },
+    {
+      "id": "39df2e6d",
+      "name": "SP ID",
+      "sectionId": "string",
+      "slug": "sp_id",
+      "type": "string/="
+    },
+    {
+      "id": "9549ec96",
+      "name": "SEN ID",
+      "sectionId": "string",
+      "slug": "sen_id",
+      "type": "string/="
+    },
+    {
+      "id": "ea40e988",
+      "name": "Stream Name",
+      "sectionId": "string",
+      "slug": "stream_name",
+      "type": "string/="
+    }
+  ],
+  "points_of_interest": null,
+  "position": null,
+  "public_uuid": null,
+  "show_in_getting_started": false,
+  "tabs": [
+    {
+      "created_at": "2025-12-02T07:39:09.840443Z",
+      "entity_id": "wVG-acBN8brycVAkCYOjh",
+      "name": "Stream Status",
+      "position": 0
+    },
+    {
+      "created_at": "2025-12-02T07:39:09.840443Z",
+      "entity_id": "5FqmylZGBmK51sAs1duX2",
+      "name": "Raw MTN Stream State",
+      "position": 1
+    },
+    {
+      "created_at": "2025-12-02T07:39:09.840443Z",
+      "entity_id": "R0oSxvcon7o7SNwBJL01H",
+      "name": "Raw SEN Stream State",
+      "position": 2
+    }
+  ],
+  "width": "fixed"
+}

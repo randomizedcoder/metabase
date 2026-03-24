@@ -1,0 +1,156 @@
+{
+  "archived": false,
+  "archived_directly": false,
+  "auto_apply_filters": true,
+  "caveats": null,
+  "collection_id": "lJL4gNhU6HEL1iHx4NjCW",
+  "collection_position": null,
+  "created_at": "2025-08-07T11:44:36.567554Z",
+  "creator_id": "doug.dominiak@siden.io",
+  "dashcards": [
+    {
+      "action_id": null,
+      "card_id": "Bg6zr8t33eWGyXks_Y1Mi",
+      "col": 0,
+      "created_at": "2025-08-07T12:13:48.313470Z",
+      "dashboard_tab_id": null,
+      "entity_id": "m2aZLN26VIKjG5qj7E5zR",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 626,
+          "parameter_id": "501f29e4",
+          "target": [
+            "dimension",
+            [
+              "template-tag",
+              "SenCachedInfoDateRange"
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 626,
+          "parameter_id": "28d22592",
+          "target": [
+            "variable",
+            [
+              "template-tag",
+              "SenId"
+            ]
+          ]
+        },
+        {
+          "card_id": 626,
+          "parameter_id": "698859fa",
+          "target": [
+            "variable",
+            [
+              "template-tag",
+              "SpId"
+            ]
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {
+        "table.cell_column": "total_asset_size",
+        "table.pivot_column": "sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "rN6yOvY4cKAynPEjJXi7D",
+      "col": 0,
+      "created_at": "2025-08-07T12:35:34.104450Z",
+      "dashboard_tab_id": null,
+      "entity_id": "RCmYS028XxBd54Z43V_sS",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 628,
+          "parameter_id": "501f29e4",
+          "target": [
+            "dimension",
+            [
+              "template-tag",
+              "SenCachedInfoDateRange"
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 628,
+          "parameter_id": "28d22592",
+          "target": [
+            "variable",
+            [
+              "template-tag",
+              "SenId"
+            ]
+          ]
+        },
+        {
+          "card_id": 628,
+          "parameter_id": "698859fa",
+          "target": [
+            "variable",
+            [
+              "template-tag",
+              "SpId"
+            ]
+          ]
+        }
+      ],
+      "row": 11,
+      "series": [],
+      "size_x": 24,
+      "size_y": 9,
+      "visualization_settings": {}
+    }
+  ],
+  "description": null,
+  "embedding_params": null,
+  "enable_embedding": false,
+  "entity_id": "BLiNTwFbuuOYKs6YENqjL",
+  "initially_published_at": null,
+  "made_public_by_id": null,
+  "name": "Test Dashboard - Content Delivery Progress",
+  "parameters": [
+    {
+      "default": "past7days",
+      "id": "501f29e4",
+      "name": "Date",
+      "sectionId": "date",
+      "slug": "date",
+      "type": "date/all-options"
+    },
+    {
+      "id": "28d22592",
+      "name": "SEN ID",
+      "sectionId": "string",
+      "slug": "sen_id",
+      "type": "string/="
+    },
+    {
+      "id": "698859fa",
+      "name": "SP ID",
+      "sectionId": "string",
+      "slug": "sp_id",
+      "type": "string/="
+    }
+  ],
+  "points_of_interest": null,
+  "position": null,
+  "public_uuid": null,
+  "show_in_getting_started": false,
+  "tabs": [],
+  "width": "fixed"
+}

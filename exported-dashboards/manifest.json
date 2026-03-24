@@ -1,0 +1,121 @@
+{
+  "dashboard_count": 23,
+  "dashboards": [
+    {
+      "file": "dashboard_5_a_look_at_ingest_status.json",
+      "id": 5,
+      "name": "A look at Ingest Status"
+    },
+    {
+      "file": "dashboard_6_dashboard_cache_management.json",
+      "id": 6,
+      "name": "Dashboard - Cache Management"
+    },
+    {
+      "file": "dashboard_2_dashboard_content_serving.json",
+      "id": 2,
+      "name": "Dashboard - Content Serving"
+    },
+    {
+      "file": "dashboard_8_dashboard_edge_nodes.json",
+      "id": 8,
+      "name": "Dashboard - Edge Nodes"
+    },
+    {
+      "file": "dashboard_253_dashboard_file_upload.json",
+      "id": 253,
+      "name": "Dashboard - File Upload"
+    },
+    {
+      "file": "dashboard_7_dashboard_internal.json",
+      "id": 7,
+      "name": "Dashboard - Internal"
+    },
+    {
+      "file": "dashboard_10_dashboard_live_streams.json",
+      "id": 10,
+      "name": "Dashboard - Live Streams"
+    },
+    {
+      "file": "dashboard_252_dashboard_prepositioning_details.json",
+      "id": 252,
+      "name": "Dashboard - Prepositioning Details"
+    },
+    {
+      "file": "dashboard_9_dashboard_sen_status.json",
+      "id": 9,
+      "name": "Dashboard - SEN Status"
+    },
+    {
+      "file": "dashboard_1_e_commerce_insights.json",
+      "id": 1,
+      "name": "E-commerce insights"
+    },
+    {
+      "file": "dashboard_11_my_content_delivery_dashboard.json",
+      "id": 11,
+      "name": "My Content Delivery Dashboard"
+    },
+    {
+      "file": "dashboard_181_test_dashboard_active_channels.json",
+      "id": 181,
+      "name": "Test Dashboard - Active Channels"
+    },
+    {
+      "file": "dashboard_249_test_dashboard_active_channels_2.json",
+      "id": 249,
+      "name": "Test Dashboard - Active Channels 2"
+    },
+    {
+      "file": "dashboard_215_test_dashboard_channel_dropout.json",
+      "id": 215,
+      "name": "Test Dashboard - Channel Dropout"
+    },
+    {
+      "file": "dashboard_250_test_dashboard_channel_status.json",
+      "id": 250,
+      "name": "Test Dashboard - Channel Status"
+    },
+    {
+      "file": "dashboard_148_test_dashboard_content_delivery_progress.json",
+      "id": 148,
+      "name": "Test Dashboard - Content Delivery Progress"
+    },
+    {
+      "file": "dashboard_115_test_dashboard_custom_title_prepositioning_2.json",
+      "id": 115,
+      "name": "Test Dashboard - Custom Title Prepositioning 2"
+    },
+    {
+      "file": "dashboard_82_test_dashboard_custom_title_prepositioning_3.json",
+      "id": 82,
+      "name": "Test Dashboard - Custom Title Prepositioning 3"
+    },
+    {
+      "file": "dashboard_248_test_dashboard_e2e_content_delivery.json",
+      "id": 248,
+      "name": "Test Dashboard - E2E Content Delivery"
+    },
+    {
+      "file": "dashboard_251_test_dashboard_e2e_content_delivery.json",
+      "id": 251,
+      "name": "Test Dashboard - E2E Content Delivery"
+    },
+    {
+      "file": "dashboard_254_test_dashboard_e2e_content_delivery.json",
+      "id": 254,
+      "name": "Test Dashboard - E2E Content Delivery"
+    },
+    {
+      "file": "dashboard_214_test_dashboard_tenant_status.json",
+      "id": 214,
+      "name": "Test Dashboard - Tenant Status"
+    },
+    {
+      "file": "dashboard_45_test_me_performance.json",
+      "id": 45,
+      "name": "Test ME Performance"
+    }
+  ],
+  "exported_at": "2026-03-24T00:01:56Z"
+}

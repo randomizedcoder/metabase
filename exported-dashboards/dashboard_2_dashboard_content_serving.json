@@ -1,0 +1,2714 @@
+{
+  "archived": false,
+  "archived_directly": false,
+  "auto_apply_filters": true,
+  "caveats": null,
+  "collection_id": "snXJuhma-E9E6Yrd_qPIW",
+  "collection_position": null,
+  "created_at": "2024-08-13T06:02:50.719441Z",
+  "creator_id": "doug.dominiak@siden.io",
+  "dashcards": [
+    {
+      "action_id": null,
+      "card_id": "0uzw_8gW8yCx9VpoAZTjo",
+      "col": 6,
+      "created_at": "2024-08-13T06:12:37.289432Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "aLmGhganLa2mk85g1TF1y",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 27,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 27,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 27,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.description": "",
+        "card.title": "Nodes Served Content",
+        "column_settings": {
+          "[\"name\",\"count\"]": {
+            "column_title": ""
+          }
+        },
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "count"
+          }
+        ]
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "lSeLZzE3L5RjLy-RJ-hIO",
+      "col": 0,
+      "created_at": "2024-08-13T06:20:57.612015Z",
+      "dashboard_tab_id": "p_sN1wcdC8m7FeCAkTGtI",
+      "entity_id": "f3OjNc6ra2B9aPmgW_3Ld",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 28,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 28,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 28,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 24,
+      "size_y": 23,
+      "visualization_settings": {
+        "card.title": "Request Logs",
+        "column_settings": {
+          "[\"name\",\"cs_method\"]": {
+            "column_title": "Method"
+          },
+          "[\"name\",\"cs_uri\"]": {
+            "column_title": "URI"
+          },
+          "[\"name\",\"s_cached_bool\"]": {
+            "column_title": "Cached"
+          },
+          "[\"name\",\"s_hostname\"]": {
+            "column_title": "Hostname"
+          },
+          "[\"name\",\"s_ip_v4\"]": {
+            "column_title": "IPv4 Address"
+          },
+          "[\"name\",\"s_ip_v6\"]": {
+            "column_title": "IPv6 Address"
+          },
+          "[\"name\",\"s_port\"]": {
+            "column_title": "Port"
+          },
+          "[\"name\",\"sc_entity_bytes\"]": {
+            "column_title": "Entity Bytes"
+          },
+          "[\"name\",\"sc_total_bytes\"]": {
+            "column_title": "Total Bytes",
+            "show_mini_bar": false
+          },
+          "[\"name\",\"siden_sen_id\"]": {
+            "column_title": "SEN ID"
+          },
+          "[\"name\",\"siden_sp_id\"]": {
+            "column_title": "SP ID"
+          },
+          "[\"name\",\"time_taken_millis\"]": {
+            "column_title": "TTLB (ms)"
+          },
+          "[\"name\",\"time_to_first_byte_millis\"]": {
+            "column_title": "TTFB (ms)"
+          },
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true,
+            "time_enabled": "milliseconds"
+          }
+        },
+        "table.cell_column": "count",
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "timestamp"
+          },
+          {
+            "enabled": true,
+            "name": "siden_sp_id"
+          },
+          {
+            "enabled": true,
+            "name": "siden_sen_id"
+          },
+          {
+            "enabled": true,
+            "name": "protocol"
+          },
+          {
+            "enabled": true,
+            "name": "s_ip_v4"
+          },
+          {
+            "enabled": false,
+            "name": "s_ip_v6"
+          },
+          {
+            "enabled": true,
+            "name": "s_hostname"
+          },
+          {
+            "enabled": true,
+            "name": "s_port"
+          },
+          {
+            "enabled": true,
+            "name": "cs_method"
+          },
+          {
+            "enabled": true,
+            "name": "sc_status"
+          },
+          {
+            "enabled": true,
+            "name": "s_cached_bool"
+          },
+          {
+            "enabled": true,
+            "name": "cs_uri"
+          },
+          {
+            "enabled": true,
+            "name": "sc_total_bytes"
+          },
+          {
+            "enabled": true,
+            "name": "sc_entity_bytes"
+          },
+          {
+            "enabled": true,
+            "name": "time_to_first_byte_millis"
+          },
+          {
+            "enabled": true,
+            "name": "time_taken_millis"
+          },
+          {
+            "enabled": false,
+            "name": "c_groupid"
+          },
+          {
+            "enabled": false,
+            "name": "u_uri"
+          },
+          {
+            "enabled": false,
+            "name": "cs_http_headers.key"
+          },
+          {
+            "enabled": false,
+            "name": "cs_http_headers.value"
+          },
+          {
+            "enabled": false,
+            "name": "sc_http_headers.key"
+          },
+          {
+            "enabled": false,
+            "name": "sc_http_headers.value"
+          },
+          {
+            "enabled": false,
+            "name": "s_ccid"
+          },
+          {
+            "enabled": false,
+            "name": "s_sid"
+          },
+          {
+            "enabled": false,
+            "name": "siden_package"
+          },
+          {
+            "enabled": false,
+            "name": "siden_spa_id"
+          },
+          {
+            "enabled": false,
+            "name": "siden_priority"
+          },
+          {
+            "enabled": false,
+            "name": "siden_checksum"
+          },
+          {
+            "enabled": false,
+            "name": "siden_cp_id"
+          },
+          {
+            "enabled": false,
+            "name": "siden_cp_origin_group_id"
+          },
+          {
+            "enabled": false,
+            "name": "siden_content_group_id"
+          },
+          {
+            "enabled": false,
+            "name": "siden_preposition_id"
+          },
+          {
+            "enabled": false,
+            "name": "siden_last_modified"
+          },
+          {
+            "enabled": false,
+            "name": "siden_hierarchy_path"
+          },
+          {
+            "enabled": false,
+            "name": "siden_hierarchy_policy"
+          },
+          {
+            "enabled": false,
+            "name": "siden_hierarchy_uri"
+          },
+          {
+            "enabled": false,
+            "name": "siden_hierarchy_status"
+          },
+          {
+            "enabled": false,
+            "name": "siden_title_id"
+          },
+          {
+            "enabled": false,
+            "name": "siden_hierarchy_hostname"
+          }
+        ],
+        "table.pivot_column": "siden_sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "WhCHciJplbf4jHo57D4JN",
+      "col": 12,
+      "created_at": "2024-08-13T06:57:06.597569Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "scTistIAeOzJ8woS4dcz0",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 29,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 29,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 29,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Total Requests"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "nasUdeU6BWz6ZG2pT7jx-",
+      "col": 0,
+      "created_at": "2024-08-13T07:34:40.116773Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "-yNGCfvr5GW9-JVkWSO3i",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 31,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 31,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 31,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 12,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Response Time - P90 (ms)"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "6rJe5VkjodemR1zB7oFs3",
+      "col": 6,
+      "created_at": "2024-08-13T07:38:04.890366Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "cjIegQNRW4gex9AJXR8-u",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 32,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 32,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 32,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 12,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Response Time - Avg (ms)",
+        "column_settings": {
+          "[\"name\",\"avg\"]": {
+            "decimals": 0
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "HfBUYfN4R64xOuMLkpH7K",
+      "col": 12,
+      "created_at": "2024-08-13T07:42:15.943376Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "ZCM3ARFoxHVx_G0osDkRi",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 33,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 33,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 33,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 12,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Response Time - Min (ms)"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "XyUIjQ2sgMNfn_SEjKJEs",
+      "col": 18,
+      "created_at": "2024-08-13T07:42:15.943376Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "zkwbgkotUezeKo08BUeXw",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 34,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 34,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 34,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 12,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Response Time - Max (ms)"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2024-08-13T07:51:49.647739Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "KmLMgh_zCUs3O6OpQbtF-",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 23,
+      "series": [],
+      "size_x": 24,
+      "size_y": 2,
+      "visualization_settings": {
+        "dashcard.background": false,
+        "text": "Content Serving Details",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2024-08-13T07:51:49.647739Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "ZqYGlhgsndGwozMYexAmQ",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 0,
+      "series": [],
+      "size_x": 24,
+      "size_y": 2,
+      "visualization_settings": {
+        "dashcard.background": false,
+        "text": "Content Serving Summary",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "o6-WnXKtjfrcow1iAoZol",
+      "col": 0,
+      "created_at": "2024-08-13T08:11:08.825204Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "n98P0knkvh-dtWjfTM92x",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 36,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 36,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 36,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 43,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Response Time - P90 (ms)",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "Response Time P90"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "q6HYfe4FyvQbNt5L5Jlvq",
+      "col": 0,
+      "created_at": "2024-08-13T08:14:16.117588Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "ywZIZE6AKT1A0L_s__gkF",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 30,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 30,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 30,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 4,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Cache Hit Rate (%)",
+        "column_settings": {
+          "[\"name\",\"Cache Hit Rate\"]": {
+            "decimals": 1,
+            "number_style": "percent"
+          }
+        },
+        "table.cell_column": "timestamp"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "vZUdaQljOqmTbUbPJaY6d",
+      "col": 12,
+      "created_at": "2024-08-13T09:41:27.820739Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "sX0eTVE0C1D1hSd0gVYjI",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 38,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 38,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 38,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 4,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Cache Hit (GB)",
+        "column_settings": {
+          "[\"name\",\"Total Cache Hit Bytes\"]": {
+            "scale": 1e-09
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "6N-Yv58qHHL4pFgY-1Lgd",
+      "col": 18,
+      "created_at": "2024-08-13T09:41:27.820739Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "VQg30ZJXPv53Sx9qQjv3N",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 39,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 39,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 39,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 4,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Cache Miss (GB)",
+        "column_settings": {
+          "[\"name\",\"Total Cache Miss Bytes\"]": {
+            "scale": 1e-09
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "zkgCr-0S_9kPEDeu7buF4",
+      "col": 6,
+      "created_at": "2024-08-13T09:41:27.820739Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "7b_LuIcZoYDyLftRBmJ5h",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 40,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 40,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 40,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 4,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Total Bytes Served (GB)",
+        "column_settings": {
+          "[\"name\",\"Total Bytes\"]": {
+            "scale": 1e-09
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "6UPDdbbXSj2M2g7ZOYi66",
+      "col": 0,
+      "created_at": "2024-08-13T09:59:32.117827Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "rGoVxzXZGftoecPuF1fbh",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 41,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 41,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 41,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 25,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Cache Hit Rate (%)",
+        "column_settings": {
+          "[\"name\",\"Cache Hit Rate\"]": {
+            "number_style": "percent"
+          },
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "Cache Hit Rate"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false,
+        "series_settings": {
+          "Cache Hit Rate": {
+            "color": "#227FD2"
+          }
+        },
+        "table.cell_column": "timestamp"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "TYhHZcnLbBFbPyzdrHYDn",
+      "col": 0,
+      "created_at": "2024-08-13T11:32:01.689958Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "KN-6Hqvch60mPLyqvloy0",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 42,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 42,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 42,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 49,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Error Rate (%)",
+        "column_settings": {
+          "[\"name\",\"Error Rate\"]": {
+            "number_style": "percent"
+          },
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "Error Rate"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "b734ipJxJoOwMv8I2VQ9Z",
+      "col": 0,
+      "created_at": "2024-08-13T11:36:42.348225Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "VqlfzFOv0k-Z6OtjmN0H3",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 43,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2709,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 43,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2714,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 43,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2710,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Active Cache Nodes"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "tfuDxO-JVX3N9Mg_6rUii",
+      "col": 0,
+      "created_at": "2024-08-13T13:03:15.796044Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "c0nw-Z2t9SFCJID4Qaw8L",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 49,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 49,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 49,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 14,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Response TTFB - P90 (ms)"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "RPdkabDlYm87rSQZkbeDe",
+      "col": 6,
+      "created_at": "2024-08-13T13:03:15.796044Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "i48vixSkNe8gRU2RN7RQb",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 46,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 46,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 46,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 14,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Response TTFB - Avg (ms)",
+        "column_settings": {
+          "[\"name\",\"avg\"]": {
+            "decimals": 0
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "OBE7zYNJc8zU50ITztyCw",
+      "col": 12,
+      "created_at": "2024-08-13T13:03:15.796044Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "KZDMNz0NxSDjafDpYTA-m",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 48,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 48,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 48,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 14,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Response TTFB - Min (ms)",
+        "table.cell_column": "min"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "jt_yFqIZl8Vbc0lleSJPd",
+      "col": 18,
+      "created_at": "2024-08-13T13:03:15.796044Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "dxDM1bFynp6y2pLdT3vrh",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 47,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 47,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 47,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 14,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Response TTFB - Max (ms)"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "YLNLpRBlaRUiQtleiseLN",
+      "col": 0,
+      "created_at": "2024-08-13T13:11:03.117520Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "rUuKcGk6qeBgGpmchltD5",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 35,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 35,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 35,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 37,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Requests",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp",
+          "Request Status"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.series_order": [
+          {
+            "color": "#EF8C8C",
+            "enabled": true,
+            "key": "Hit",
+            "name": "Hit"
+          },
+          {
+            "color": "#F9D45C",
+            "enabled": true,
+            "key": "Miss",
+            "name": "Miss"
+          },
+          {
+            "color": "#ED6E6E",
+            "enabled": true,
+            "key": "Error",
+            "name": "Error"
+          },
+          {
+            "color": "#F2A86F",
+            "enabled": true,
+            "key": "Redirect",
+            "name": "Redirect"
+          }
+        ],
+        "graph.series_order_dimension": "Request Status",
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false,
+        "series_settings": {
+          "Hit": {
+            "color": "#227FD2"
+          },
+          "Miss": {
+            "color": "#87BCEC"
+          }
+        },
+        "stackable.stack_type": "stacked"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "5kMpM-RLPWqzdDjgg1fq-",
+      "col": 0,
+      "created_at": "2024-08-13T13:24:53.530604Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "iLnt9DTvFB4N6omnAEhzu",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 50,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 50,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 50,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 31,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Bytes Served (GB)",
+        "column_settings": {
+          "[\"name\",\"Total Bytes\"]": {
+            "scale": 1e-09
+          },
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp",
+          "s_cached_bool"
+        ],
+        "graph.metrics": [
+          "Total Bytes"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false,
+        "series_settings": {
+          "false": {
+            "color": "#87BCEC",
+            "title": "Cache Miss"
+          },
+          "true": {
+            "color": "#227FD2",
+            "title": "Cache Hit"
+          }
+        },
+        "stackable.stack_type": "stacked"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "6UPDdbbXSj2M2g7ZOYi66",
+      "col": 0,
+      "created_at": "2024-08-14T06:47:43.438383Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "v62vrZAd6y2e1X-VBcnEo",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 41,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 41,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 41,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 6,
+      "series": [],
+      "size_x": 12,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Cache Hit Rate (%)",
+        "column_settings": {
+          "[\"name\",\"Cache Hit Rate\"]": {
+            "number_style": "percent"
+          },
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "Cache Hit Rate"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false,
+        "table.cell_column": "timestamp"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "T9wDd9wGLzEiMBxZB0TF8",
+      "col": 12,
+      "created_at": "2024-08-14T06:51:00.060845Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "o3sV76DeDWzTA-kKfrOOC",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 44,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 44,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 44,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 6,
+      "series": [],
+      "size_x": 12,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Traffic Offloaded (GB)",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "Total Cache Hit Bytes"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "XI6jEBZRtZ6qqlJsl4Ng8",
+      "col": 0,
+      "created_at": "2024-08-14T08:48:29.949511Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "5Hx-HDpoa7GJ6jUP5Frcy",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 108,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 108,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 108,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 16,
+      "series": [],
+      "size_x": 24,
+      "size_y": 7,
+      "visualization_settings": {
+        "card.title": "Content Served by Node",
+        "column_settings": {
+          "[\"name\",\"count\"]": {
+            "column_title": "Requests Served",
+            "show_mini_bar": true
+          },
+          "[\"name\",\"siden_sen_id\"]": {
+            "column_title": "SEN ID"
+          },
+          "[\"name\",\"siden_sp_id\"]": {
+            "column_title": "SP ID"
+          },
+          "[\"name\",\"sum\"]": {
+            "column_title": "Bytes Served (GB)",
+            "scale": 1e-09,
+            "show_mini_bar": true
+          },
+          "[\"ref\",[\"field\",2775,{\"base-type\":\"type/DateTimeWithTZ\"}]]": {
+            "date_abbreviate": true
+          }
+        },
+        "table.cell_column": "count",
+        "table.pivot": false,
+        "table.pivot_column": "siden_sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "WhCHciJplbf4jHo57D4JN",
+      "col": 0,
+      "created_at": "2024-08-23T09:33:39.523234Z",
+      "dashboard_tab_id": "p_sN1wcdC8m7FeCAkTGtI",
+      "entity_id": "JfEyI5evnS7qwyRVE2UJt",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 29,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 29,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 29,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Requests Logged"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "6oCXQ9zgaNGJTG3wq33_w",
+      "col": 18,
+      "created_at": "2024-08-23T09:33:39.523234Z",
+      "dashboard_tab_id": "p_sN1wcdC8m7FeCAkTGtI",
+      "entity_id": "3b28qYO6MtuhygmDQfbe4",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 110,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 110,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 110,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Request Last Logged Mins",
+        "column_settings": {
+          "[\"ref\",[\"field\",2775,{\"base-type\":\"type/DateTimeWithTZ\"}]]": {
+            "date_abbreviate": true
+          }
+        },
+        "scalar.field": "Last Seen Mins",
+        "table.cell_column": "count",
+        "table.pivot_column": "siden_sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "yI4bUz7qeda21o7WmmSwZ",
+      "col": 12,
+      "created_at": "2024-08-23T09:33:39.523234Z",
+      "dashboard_tab_id": "p_sN1wcdC8m7FeCAkTGtI",
+      "entity_id": "PO_GSql7OAAWplR_E7-pw",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 109,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 109,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 109,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Request Last Logged",
+        "column_settings": {
+          "[\"ref\",[\"field\",2775,{\"base-type\":\"type/DateTimeWithTZ\"}]]": {
+            "date_abbreviate": true
+          }
+        },
+        "scalar.field": "max",
+        "table.cell_column": "count",
+        "table.pivot_column": "siden_sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "0uzw_8gW8yCx9VpoAZTjo",
+      "col": 6,
+      "created_at": "2024-08-23T09:36:16.772469Z",
+      "dashboard_tab_id": "p_sN1wcdC8m7FeCAkTGtI",
+      "entity_id": "gjQpA-T5B-jnZj4RMFICn",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 27,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 27,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 27,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Nodes Logged Requests"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "343GgPYFsqZgLYylCazT6",
+      "col": 0,
+      "created_at": "2025-03-11T11:51:17.493248Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "ODknTwTPW4Vcpoiz4oMhT",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 218,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 218,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 218,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 55,
+      "series": [],
+      "size_x": 12,
+      "size_y": 8,
+      "visualization_settings": {
+        "card.title": "Request Count by HTTP Status Code"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "EGfJk_Tfbff1C-fVFga5u",
+      "col": 12,
+      "created_at": "2025-03-11T11:51:17.493248Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "RQM77iNhEHbeOKz9HQraJ",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 220,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 220,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 220,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 55,
+      "series": [],
+      "size_x": 12,
+      "size_y": 8,
+      "visualization_settings": {
+        "card.title": "Request Count by Cached Status",
+        "pie.colors": {
+          "Hit": "#689636",
+          "Miss": "#509EE3"
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "OHBvcJggIFYiyH8kmcif0",
+      "col": 18,
+      "created_at": "2025-03-11T12:09:54.827408Z",
+      "dashboard_tab_id": "gd3IabD2aTVVfygNXuUKY",
+      "entity_id": "xg2w4VULzfjnrkz0izMQh",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 37,
+          "parameter_id": "1895e1c5",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2775,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 37,
+          "parameter_id": "adbd299",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2773,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 37,
+          "parameter_id": "2d63b8d4",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2788,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Error Rate",
+        "column_settings": {
+          "[\"name\",\"Error Rate\"]": {
+            "number_style": "percent"
+          }
+        }
+      }
+    }
+  ],
+  "description": null,
+  "embedding_params": {
+    "date_filter": "enabled",
+    "sen_id": "enabled",
+    "sp_id": "locked"
+  },
+  "enable_embedding": true,
+  "entity_id": "maX4gSheWlvjyxjpfYR5-",
+  "initially_published_at": "2024-08-23T10:31:23.731753Z",
+  "made_public_by_id": "doug.dominiak@siden.io",
+  "name": "Dashboard - Content Serving",
+  "parameters": [
+    {
+      "default": "past7days~",
+      "id": "1895e1c5",
+      "name": "Date Filter",
+      "sectionId": "date",
+      "slug": "date_filter",
+      "type": "date/all-options"
+    },
+    {
+      "id": "adbd299",
+      "isMultiSelect": true,
+      "name": "SEN ID",
+      "sectionId": "string",
+      "slug": "sen_id",
+      "type": "string/="
+    },
+    {
+      "id": "2d63b8d4",
+      "name": "SP ID",
+      "sectionId": "string",
+      "slug": "sp_id",
+      "type": "string/="
+    }
+  ],
+  "points_of_interest": null,
+  "position": null,
+  "public_uuid": "4eada099-ed52-4323-bb93-610dcdce7cc7",
+  "show_in_getting_started": false,
+  "tabs": [
+    {
+      "created_at": "2024-08-13T06:13:09.294341Z",
+      "entity_id": "gd3IabD2aTVVfygNXuUKY",
+      "name": "Summary",
+      "position": 0
+    },
+    {
+      "created_at": "2024-08-13T06:13:09.294341Z",
+      "entity_id": "p_sN1wcdC8m7FeCAkTGtI",
+      "name": "Request Logs",
+      "position": 1
+    }
+  ],
+  "width": "fixed"
+}

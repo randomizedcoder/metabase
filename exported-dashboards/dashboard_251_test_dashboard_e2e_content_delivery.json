@@ -1,0 +1,1322 @@
+{
+  "archived": false,
+  "archived_directly": false,
+  "auto_apply_filters": true,
+  "caveats": null,
+  "collection_id": "9d_IODK3ZlLRSVBiEzwR9",
+  "collection_position": null,
+  "created_at": "2025-12-02T16:23:51.699440Z",
+  "creator_id": "doug.dominiak@siden.io",
+  "dashcards": [
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2025-12-02T16:26:35.358736Z",
+      "dashboard_tab_id": null,
+      "entity_id": "SiwWGFVLdWZM_x1E-03F1",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 36,
+      "series": [],
+      "size_x": 24,
+      "size_y": 1,
+      "visualization_settings": {
+        "dashcard.background": false,
+        "text": "Logs",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2025-12-02T16:26:35.358736Z",
+      "dashboard_tab_id": null,
+      "entity_id": "QcB-PJmtEWCXgzZhceJJZ",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 10,
+      "series": [],
+      "size_x": 24,
+      "size_y": 1,
+      "visualization_settings": {
+        "dashcard.background": false,
+        "text": "Title Delivery by SEN",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "Nli2h3FLp-AKx-jPzhFbR",
+      "col": 12,
+      "created_at": "2025-12-02T16:26:35.358736Z",
+      "dashboard_tab_id": null,
+      "entity_id": "ztrbcyDovdDaYonnrQGGc",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 862,
+          "parameter_id": "cafb269d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "discover_date",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 862,
+          "parameter_id": "51ff916",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 862,
+          "parameter_id": "4d43b5e3",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Delivered Bytes (GB)",
+        "column_settings": {
+          "[\"name\",\"Delivered Bytes\"]": {
+            "scale": 1e-09
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "KFkFGhVKc4WGYkqHBmp4A",
+      "col": 6,
+      "created_at": "2025-12-02T16:26:35.358736Z",
+      "dashboard_tab_id": null,
+      "entity_id": "Y8ThDuqyPCFB0TNslHN5p",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 865,
+          "parameter_id": "cafb269d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "discover_date",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 865,
+          "parameter_id": "51ff916",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 865,
+          "parameter_id": "4d43b5e3",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Total Bytes (GB)",
+        "column_settings": {
+          "[\"name\",\"Total Bytes\"]": {
+            "scale": 1e-09
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "s2ggYN1T9KF50EBuOM_JL",
+      "col": 18,
+      "created_at": "2025-12-02T16:26:35.358736Z",
+      "dashboard_tab_id": null,
+      "entity_id": "4mtry16CaixC7KFrq0yWM",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 868,
+          "parameter_id": "cafb269d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "discover_date",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 868,
+          "parameter_id": "51ff916",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 868,
+          "parameter_id": "4d43b5e3",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Undelivered Bytes (GB)",
+        "column_settings": {
+          "[\"name\",\"Undelivered Bytes\"]": {
+            "scale": 1e-09
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "QSFZOGsHbTDKQ0E21lSTu",
+      "col": 6,
+      "created_at": "2025-12-02T16:26:35.358736Z",
+      "dashboard_tab_id": null,
+      "entity_id": "jx7jlREh6Db9Rh7jKfZax",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 866,
+          "parameter_id": "cafb269d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "discover_date",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 866,
+          "parameter_id": "51ff916",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 866,
+          "parameter_id": "4d43b5e3",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Total Titles"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "tjpTIIviGrE9Dd5NMpl-1",
+      "col": 12,
+      "created_at": "2025-12-02T16:26:35.358736Z",
+      "dashboard_tab_id": null,
+      "entity_id": "JKPaA3aVxJwfUDAHOMpnS",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 863,
+          "parameter_id": "cafb269d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "discover_date",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 863,
+          "parameter_id": "51ff916",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 863,
+          "parameter_id": "4d43b5e3",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Delivered Titles"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "H2wg79h20gIuTh6aRcvc6",
+      "col": 18,
+      "created_at": "2025-12-02T16:26:35.358736Z",
+      "dashboard_tab_id": null,
+      "entity_id": "ZF6C2NWDugVQr9vK1kdxU",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 869,
+          "parameter_id": "cafb269d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "discover_date",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 869,
+          "parameter_id": "51ff916",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 869,
+          "parameter_id": "4d43b5e3",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Undelivered Titles"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "1Go2Bp6iP0UP1V6HuKaZQ",
+      "col": 0,
+      "created_at": "2025-12-02T16:26:35.358736Z",
+      "dashboard_tab_id": null,
+      "entity_id": "D4pfbBGIIBiAkC9dZMMSG",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 864,
+          "parameter_id": "cafb269d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "discover_date",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 864,
+          "parameter_id": "51ff916",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 864,
+          "parameter_id": "4d43b5e3",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 4,
+      "visualization_settings": {
+        "card.title": "Active Edge Nodes"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "zyoUYIcKMsj50-UBkXyAo",
+      "col": 0,
+      "created_at": "2025-12-02T16:26:35.358736Z",
+      "dashboard_tab_id": null,
+      "entity_id": "ssiqnyvIALfunbHcGaNbT",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 867,
+          "parameter_id": "cafb269d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "discover_date",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 867,
+          "parameter_id": "51ff916",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 867,
+          "parameter_id": "4d43b5e3",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 4,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Titles Delivered by Day",
+        "column_settings": {
+          "[\"name\",\"title_end_date\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "title_end_date",
+          "order_id"
+        ],
+        "graph.metrics": [
+          "Delivered Titles"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": true,
+        "stackable.stack_type": "stacked"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "Dl-ETTsx2tfxn1pJu6MMC",
+      "col": 0,
+      "created_at": "2025-12-02T16:26:35.358736Z",
+      "dashboard_tab_id": null,
+      "entity_id": "c9YW7bbSO_d2KWeVUQfxR",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 858,
+          "parameter_id": "cafb269d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "discover_date",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 858,
+          "parameter_id": "51ff916",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 858,
+          "parameter_id": "4d43b5e3",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 11,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Delivery Progress by Node",
+        "column_settings": {
+          "[\"name\",\"Delivery Progress\"]": {
+            "number_style": "percent"
+          }
+        },
+        "graph.dimensions": [
+          "sen_id"
+        ],
+        "graph.metrics": [
+          "Delivery Progress"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "RfvKuQWW_nzdKIwC8qj2t",
+      "col": 0,
+      "created_at": "2025-12-02T16:26:35.358736Z",
+      "dashboard_tab_id": null,
+      "entity_id": "Nt3M0jTYiWuDEzYAJePds",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 859,
+          "parameter_id": "cafb269d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "discover_date",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 859,
+          "parameter_id": "51ff916",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 859,
+          "parameter_id": "4d43b5e3",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 17,
+      "series": [],
+      "size_x": 24,
+      "size_y": 9,
+      "visualization_settings": {
+        "card.title": "Edge Node Delivery Summary",
+        "column_settings": {
+          "[\"name\",\"Delivered Bytes\"]": {
+            "column_title": "Delivered Bytes (GB)",
+            "scale": 1e-09
+          },
+          "[\"name\",\"Delivery Progress\"]": {
+            "number_style": "percent",
+            "show_mini_bar": true
+          },
+          "[\"name\",\"Max Title End Date\"]": {
+            "date_abbreviate": true
+          },
+          "[\"name\",\"Min Title Start Date\"]": {
+            "date_abbreviate": true
+          },
+          "[\"name\",\"Total Bytes\"]": {
+            "column_title": "Total Bytes (GB)",
+            "scale": 1e-09
+          },
+          "[\"name\",\"cp_id\"]": {
+            "column_title": "CP ID"
+          },
+          "[\"name\",\"sen_id\"]": {
+            "column_title": "SEN ID"
+          },
+          "[\"name\",\"sp_id\"]": {
+            "column_title": "SP ID"
+          }
+        },
+        "table.cell_column": "Total Titles",
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "sp_id"
+          },
+          {
+            "enabled": true,
+            "name": "cp_id"
+          },
+          {
+            "enabled": true,
+            "name": "sen_id"
+          },
+          {
+            "enabled": true,
+            "name": "Delivery Progress"
+          },
+          {
+            "enabled": true,
+            "name": "Total Titles"
+          },
+          {
+            "enabled": true,
+            "name": "Delivered Titles"
+          },
+          {
+            "enabled": true,
+            "name": "Total Bytes"
+          },
+          {
+            "enabled": true,
+            "name": "Delivered Bytes"
+          },
+          {
+            "enabled": true,
+            "name": "Min Title Start Date"
+          },
+          {
+            "enabled": true,
+            "name": "Max Title End Date"
+          },
+          {
+            "enabled": true,
+            "name": "Total Orders"
+          }
+        ],
+        "table.pivot_column": "sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "hT2ib0WN3ZUUpZeQCpDvA",
+      "col": 0,
+      "created_at": "2025-12-02T16:27:19.301457Z",
+      "dashboard_tab_id": null,
+      "entity_id": "6J175U_vKgTYWutpHbQm3",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 857,
+          "parameter_id": "cafb269d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "discover_date",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 857,
+          "parameter_id": "51ff916",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 857,
+          "parameter_id": "4d43b5e3",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 37,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {
+        "card.description": "One record per title per SEN",
+        "card.title": "Title Delivery Logs",
+        "column_settings": {
+          "[\"name\",\"discover_date\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "table.cell_column": "total_bytes",
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "cp_id"
+          },
+          {
+            "enabled": true,
+            "name": "order_id"
+          },
+          {
+            "enabled": true,
+            "name": "cp_title_id"
+          },
+          {
+            "enabled": true,
+            "name": "title_id"
+          },
+          {
+            "enabled": true,
+            "name": "human_readable_title"
+          },
+          {
+            "enabled": false,
+            "name": "manifest_url"
+          },
+          {
+            "enabled": true,
+            "name": "discover_date"
+          },
+          {
+            "enabled": true,
+            "name": "transfer_start_date_adj"
+          },
+          {
+            "enabled": true,
+            "name": "transfer_end_date_adj"
+          },
+          {
+            "enabled": true,
+            "name": "ingest_date_adj"
+          },
+          {
+            "enabled": true,
+            "name": "schedule_date_adj"
+          },
+          {
+            "enabled": true,
+            "name": "discovered"
+          },
+          {
+            "enabled": true,
+            "name": "transfer_in_progress"
+          },
+          {
+            "enabled": true,
+            "name": "transferred"
+          },
+          {
+            "enabled": true,
+            "name": "ingested"
+          },
+          {
+            "enabled": true,
+            "name": "scheduled"
+          },
+          {
+            "enabled": true,
+            "name": "sp_id"
+          },
+          {
+            "enabled": true,
+            "name": "cache_bucket_id"
+          },
+          {
+            "enabled": true,
+            "name": "sen_id"
+          },
+          {
+            "enabled": true,
+            "name": "title_name"
+          },
+          {
+            "enabled": true,
+            "name": "title_del.title_id"
+          },
+          {
+            "enabled": true,
+            "name": "trigger_id"
+          },
+          {
+            "enabled": true,
+            "name": "title_start_date"
+          },
+          {
+            "enabled": true,
+            "name": "title_end_date"
+          },
+          {
+            "enabled": true,
+            "name": "total_bytes"
+          },
+          {
+            "enabled": true,
+            "name": "total_assets"
+          },
+          {
+            "enabled": true,
+            "name": "delivered_bytes"
+          },
+          {
+            "enabled": true,
+            "name": "delivered_assets"
+          },
+          {
+            "enabled": true,
+            "name": "undelivered_bytes"
+          },
+          {
+            "enabled": true,
+            "name": "undelivered_assets"
+          },
+          {
+            "enabled": true,
+            "name": "del_pending"
+          },
+          {
+            "enabled": true,
+            "name": "del_in_progress"
+          },
+          {
+            "enabled": true,
+            "name": "del_completed"
+          },
+          {
+            "enabled": true,
+            "name": "del_duration"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_duration"
+          }
+        ],
+        "table.pivot_column": "cp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "PvyL7HCHFr0fOUEY0AsQX",
+      "col": 0,
+      "created_at": "2025-12-02T18:16:07.752186Z",
+      "dashboard_tab_id": null,
+      "entity_id": "4qxoz7K6OzqQvfyCxQHs6",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 871,
+          "parameter_id": "cafb269d",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "e2e_inv_discover_start_date",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 871,
+          "parameter_id": "51ff916",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 871,
+          "parameter_id": "4d43b5e3",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 27,
+      "series": [],
+      "size_x": 24,
+      "size_y": 9,
+      "visualization_settings": {
+        "card.title": "Content Orders",
+        "column_settings": {
+          "[\"name\",\"delivery_progress\"]": {
+            "number_style": "percent",
+            "show_mini_bar": true
+          }
+        },
+        "table.cell_column": "e2e_cnt_titles",
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "sp_id"
+          },
+          {
+            "enabled": true,
+            "name": "cp_id"
+          },
+          {
+            "enabled": true,
+            "name": "order_id"
+          },
+          {
+            "enabled": true,
+            "name": "sen_id"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_order_status"
+          },
+          {
+            "enabled": true,
+            "name": "order_duration"
+          },
+          {
+            "enabled": true,
+            "name": "delivery_progress"
+          },
+          {
+            "enabled": true,
+            "name": "delivery_throughput"
+          },
+          {
+            "enabled": true,
+            "name": "delivery_remaining"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_cnt_titles"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_cnt_titles_pending"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_cnt_titles_in_progress"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_cnt_titles_inv_completed"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_cnt_titles_completed"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_pending"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_in_progress"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_inv_completed"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_completed"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_inv_discover_start_date"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_inv_discover_end_date"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_del_start_date"
+          },
+          {
+            "enabled": true,
+            "name": "e2e_del_end_date"
+          }
+        ],
+        "table.pivot_column": "e2e_inv_discover_start_date"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2025-12-02T18:16:07.752186Z",
+      "dashboard_tab_id": null,
+      "entity_id": "vABSwHM5ZmrcR9I9cTh1X",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 26,
+      "series": [],
+      "size_x": 24,
+      "size_y": 1,
+      "visualization_settings": {
+        "dashcard.background": false,
+        "text": "Content Order Summary",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    }
+  ],
+  "description": null,
+  "embedding_params": null,
+  "enable_embedding": false,
+  "entity_id": "2hyG6XG17MLmj5uiFcN8M",
+  "initially_published_at": null,
+  "made_public_by_id": null,
+  "name": "Test Dashboard - E2E Content Delivery",
+  "parameters": [
+    {
+      "default": "past7days~",
+      "id": "cafb269d",
+      "name": "Date Range",
+      "sectionId": "date",
+      "slug": "date_range",
+      "type": "date/all-options"
+    },
+    {
+      "id": "51ff916",
+      "name": "SP ID",
+      "sectionId": "string",
+      "slug": "sp_id",
+      "type": "string/="
+    },
+    {
+      "id": "4d43b5e3",
+      "name": "SEN ID",
+      "sectionId": "string",
+      "slug": "sen_id",
+      "type": "string/="
+    }
+  ],
+  "points_of_interest": null,
+  "position": null,
+  "public_uuid": null,
+  "show_in_getting_started": false,
+  "tabs": [],
+  "width": "fixed"
+}

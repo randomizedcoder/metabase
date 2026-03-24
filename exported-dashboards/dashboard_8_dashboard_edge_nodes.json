@@ -1,0 +1,2430 @@
+{
+  "archived": false,
+  "archived_directly": false,
+  "auto_apply_filters": true,
+  "caveats": null,
+  "collection_id": "snXJuhma-E9E6Yrd_qPIW",
+  "collection_position": null,
+  "created_at": "2024-08-20T08:19:23.403642Z",
+  "creator_id": "doug.dominiak@siden.io",
+  "dashcards": [
+    {
+      "action_id": null,
+      "card_id": "b734ipJxJoOwMv8I2VQ9Z",
+      "col": 0,
+      "created_at": "2024-08-20T08:27:08.392821Z",
+      "dashboard_tab_id": "Nmn6UWlTGpSA7JiAtFJF5",
+      "entity_id": "ud876p_A9o2pnu63DHuEs",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 43,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2709,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 43,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2710,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 43,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2714,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 24,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Active Edge Nodes"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "k6T6noigifh3A1HXpg8ZD",
+      "col": 12,
+      "created_at": "2024-08-20T08:28:34.494850Z",
+      "dashboard_tab_id": "Nmn6UWlTGpSA7JiAtFJF5",
+      "entity_id": "N-GGYQ-tWYROdyAVEqb-F",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 131,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2709,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 131,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2710,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 131,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2714,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 12,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Nodes Active",
+        "column_settings": {
+          "[\"name\",\"reported_at\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "reported_at"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "K9eZold0UUpURMMINLpyi",
+      "col": 0,
+      "created_at": "2024-08-20T08:34:23.345604Z",
+      "dashboard_tab_id": "Nmn6UWlTGpSA7JiAtFJF5",
+      "entity_id": "yB1cQlaQfl1vzKr518QW5",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 132,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2709,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 132,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2710,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 132,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2714,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 8,
+      "series": [],
+      "size_x": 12,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Nodes Served Content",
+        "column_settings": {
+          "[\"name\",\"reported_at\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "reported_at"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "IQNDhgrxig7u2lAwlKupN",
+      "col": 12,
+      "created_at": "2024-08-20T08:34:23.345604Z",
+      "dashboard_tab_id": "Nmn6UWlTGpSA7JiAtFJF5",
+      "entity_id": "ciy5WczmfCpWnTWqmca4x",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 133,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2709,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 133,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2710,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 133,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2714,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 8,
+      "series": [],
+      "size_x": 12,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Nodes Prepositioned Content",
+        "column_settings": {
+          "[\"name\",\"reported_at\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "reported_at"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "srDwKrknk7fUUgNKNIrdN",
+      "col": 0,
+      "created_at": "2024-08-20T08:41:37.547236Z",
+      "dashboard_tab_id": "Nmn6UWlTGpSA7JiAtFJF5",
+      "entity_id": "ghfBFxXJ9ViitYHpVRrsm",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 135,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 135,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 135,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 14,
+      "series": [],
+      "size_x": 12,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Nodes Started/Restarted",
+        "column_settings": {
+          "[\"name\",\"max\"]": {
+            "date_abbreviate": true
+          },
+          "[\"name\",\"reported_at\"]": {
+            "date_abbreviate": true
+          },
+          "[\"ref\",[\"field\",2320,null]]": {
+            "column_title": "SEN ID"
+          },
+          "[\"ref\",[\"field\",2321,null]]": {
+            "column_title": "SP ID"
+          },
+          "[\"ref\",[\"field\",2323,null]]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "reported_at"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false,
+        "table.cell_column": "edge_node_version",
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "count"
+          },
+          {
+            "enabled": true,
+            "name": "reported_at"
+          }
+        ],
+        "table.pivot_column": "sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "n6Qc67fzYg-ely46mOT-9",
+      "col": 12,
+      "created_at": "2024-08-20T08:41:37.547236Z",
+      "dashboard_tab_id": "Nmn6UWlTGpSA7JiAtFJF5",
+      "entity_id": "YvnIwDdq5ynYXZS4kJaHY",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 134,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 134,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 134,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 14,
+      "series": [],
+      "size_x": 12,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Nodes Reported Errors",
+        "column_settings": {
+          "[\"name\",\"reported_at\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "reported_at"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false,
+        "table.cell_column": "error_msg",
+        "table.pivot_column": "sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "sq-NLiDZJUA33mDwoPPcj",
+      "col": 0,
+      "created_at": "2024-08-20T10:34:04.468969Z",
+      "dashboard_tab_id": "Nmn6UWlTGpSA7JiAtFJF5",
+      "entity_id": "GlqtviqJmtbHzRBHzMiKs",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 138,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 138,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 12,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Node Connection Status",
+        "pie.dimension": "Connection Status",
+        "pie.metric": "count"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "CLZH-JJYlgaQshqPfmFdT",
+      "col": 0,
+      "created_at": "2024-08-20T10:59:01.327757Z",
+      "dashboard_tab_id": "Nmn6UWlTGpSA7JiAtFJF5",
+      "entity_id": "EcGNKIOW0XjG5es9DwJun",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 139,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 139,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 20,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {
+        "card.title": "Node Connection Status",
+        "column_settings": {
+          "[\"name\",\"last_reported_date\"]": {
+            "column_title": "Last Reported Date",
+            "date_abbreviate": true
+          },
+          "[\"name\",\"sen_id\"]": {
+            "column_title": "SEN ID"
+          },
+          "[\"name\",\"sp_id\"]": {
+            "column_title": "SP ID"
+          }
+        },
+        "pie.dimension": "Connection Status",
+        "pie.metric": "count",
+        "table.cell_column": "last_reported_date",
+        "table.column_formatting": [
+          {
+            "color": "#A7D07C",
+            "columns": [
+              "Connection Status"
+            ],
+            "highlight_row": true,
+            "id": 0,
+            "operator": "=",
+            "type": "single",
+            "value": "ONLINE"
+          }
+        ],
+        "table.pivot_column": "Connection Status"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "lKv7O1ZVQqV6953ZXNrZH",
+      "col": 0,
+      "created_at": "2024-08-20T12:20:52.793709Z",
+      "dashboard_tab_id": "B6beTv4V1e_e9sJvAdf1U",
+      "entity_id": "UlXnMBaiZniMmUzMEC5ro",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 146,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 146,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 146,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 3,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Nodes Updated by Day",
+        "column_settings": {
+          "[\"name\",\"reported_at\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "reported_at"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "UCuLQQX1m7T4Kr0-xOwro",
+      "col": 12,
+      "created_at": "2024-08-20T12:20:52.793709Z",
+      "dashboard_tab_id": "B6beTv4V1e_e9sJvAdf1U",
+      "entity_id": "-iJylC_zkVOMtgDh0vW3k",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 144,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 144,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 144,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.title": "Updates Failed"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "5vItoEsdDGGTp0WK4H-vx",
+      "col": 0,
+      "created_at": "2024-08-20T12:20:52.793709Z",
+      "dashboard_tab_id": "B6beTv4V1e_e9sJvAdf1U",
+      "entity_id": "FVjf1ADwXEnXv3kGIxF8W",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 142,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 142,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 142,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.title": "Updates Attempted"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "HOfHADvynXBjbDD1kFqyw",
+      "col": 6,
+      "created_at": "2024-08-20T12:20:52.793709Z",
+      "dashboard_tab_id": "B6beTv4V1e_e9sJvAdf1U",
+      "entity_id": "5KktyAZ5ANmUPu_gv60E5",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 143,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 143,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 143,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.title": "Updates Succeeded"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "BdV5LBKyisi5IpAVJxjlQ",
+      "col": 18,
+      "created_at": "2024-08-20T12:20:52.793709Z",
+      "dashboard_tab_id": "B6beTv4V1e_e9sJvAdf1U",
+      "entity_id": "wVtW14NX3kmQVmcuQLbEc",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 145,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 145,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 145,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.title": "Update Success Rate",
+        "column_settings": {
+          "[\"name\",\"Update Success Rate\"]": {
+            "number_style": "percent"
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "nOfr1Y8Y7eGVpG6Q01ZBw",
+      "col": 0,
+      "created_at": "2024-08-20T12:20:52.793709Z",
+      "dashboard_tab_id": "B6beTv4V1e_e9sJvAdf1U",
+      "entity_id": "8QULeoFYNIEoaEBN-5X0v",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 147,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 147,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 147,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 16,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {
+        "card.title": "SEN Update Logs",
+        "column_settings": {
+          "[\"name\",\"msg\"]": {
+            "column_title": "Message"
+          },
+          "[\"name\",\"reported_at\"]": {
+            "column_title": "Timestamp",
+            "date_abbreviate": true
+          },
+          "[\"name\",\"sen_id\"]": {
+            "column_title": "SEN ID"
+          },
+          "[\"name\",\"sp_id\"]": {
+            "column_title": "SP ID"
+          }
+        },
+        "table.cell_column": "msg",
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "reported_at"
+          },
+          {
+            "enabled": true,
+            "name": "sp_id"
+          },
+          {
+            "enabled": true,
+            "name": "sen_id"
+          },
+          {
+            "enabled": true,
+            "name": "source"
+          },
+          {
+            "enabled": true,
+            "name": "version"
+          },
+          {
+            "enabled": true,
+            "name": "msg"
+          }
+        ],
+        "table.pivot_column": "source"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "JbAxpyyLmAWwLTkaVoALg",
+      "col": 0,
+      "created_at": "2024-08-20T12:30:36.072015Z",
+      "dashboard_tab_id": "B6beTv4V1e_e9sJvAdf1U",
+      "entity_id": "0-WK9E4-gWgQUJoy3ojah",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 148,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 148,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 148,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 27,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {
+        "card.title": "SEN Update Error Logs",
+        "column_settings": {
+          "[\"name\",\"msg\"]": {
+            "column_title": "Message"
+          },
+          "[\"name\",\"reported_at\"]": {
+            "column_title": "Timestamp",
+            "date_abbreviate": true
+          },
+          "[\"name\",\"sen_id\"]": {
+            "column_title": "SEN ID"
+          },
+          "[\"name\",\"sp_id\"]": {
+            "column_title": "SP ID"
+          }
+        },
+        "table.cell_column": "msg",
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "reported_at"
+          },
+          {
+            "enabled": true,
+            "name": "sp_id"
+          },
+          {
+            "enabled": true,
+            "name": "sen_id"
+          },
+          {
+            "enabled": true,
+            "name": "source"
+          },
+          {
+            "enabled": true,
+            "name": "version"
+          },
+          {
+            "enabled": true,
+            "name": "msg"
+          }
+        ],
+        "table.pivot_column": "source"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "J01nu9NO_Xft1GzxVnqPS",
+      "col": 6,
+      "created_at": "2024-08-20T12:45:35.110038Z",
+      "dashboard_tab_id": "_TKboD0e859VaXGYHMSLH",
+      "entity_id": "0QDiYeswUrAEChyijI3Rn",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 151,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 151,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 151,
+          "parameter_id": "6203a1c2",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.title": "Nodes With Installed Certs"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "K2pomc22F4CyPY3KXwrhy",
+      "col": 0,
+      "created_at": "2024-08-20T12:45:35.110038Z",
+      "dashboard_tab_id": "_TKboD0e859VaXGYHMSLH",
+      "entity_id": "NyRszs5gnsRGl2elf0YuP",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 150,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 150,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 150,
+          "parameter_id": "6203a1c2",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.title": "Edge Nodes Reported"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "dpq0EiRYLsH_o7ENbzWf9",
+      "col": 12,
+      "created_at": "2024-08-20T12:45:35.110038Z",
+      "dashboard_tab_id": "_TKboD0e859VaXGYHMSLH",
+      "entity_id": "0UcfkUTyh8QsJi40I80fU",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 152,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 152,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 152,
+          "parameter_id": "6203a1c2",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.title": "Certs Updated"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "v_ATvcbXIkc8UrQVp5ik1",
+      "col": 0,
+      "created_at": "2024-08-20T13:28:22.093761Z",
+      "dashboard_tab_id": "_TKboD0e859VaXGYHMSLH",
+      "entity_id": "Goa85-HDz-hzf8kXWl7KF",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 153,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 153,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 153,
+          "parameter_id": "6203a1c2",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 3,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "TLS Certificate Updates by Day",
+        "column_settings": {
+          "[\"name\",\"reported_at\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "reported_at"
+        ],
+        "graph.metrics": [
+          "sum",
+          "sum_2",
+          "sum_3"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "stackable.stack_type": "stacked"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "NhTqvQay4XCAdpQEBfpfw",
+      "col": 0,
+      "created_at": "2024-08-20T13:35:51.230627Z",
+      "dashboard_tab_id": "_TKboD0e859VaXGYHMSLH",
+      "entity_id": "X22dWU_7HJKURMb6LB8rS",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 154,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 154,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 154,
+          "parameter_id": "6203a1c2",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 9,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {
+        "card.title": "TLS Certificate Update Details",
+        "column_settings": {
+          "[\"name\",\"sen_id\"]": {
+            "column_title": "SEN ID"
+          },
+          "[\"name\",\"sp_id\"]": {
+            "column_title": "SP ID"
+          },
+          "[\"name\",\"sum\"]": {
+            "column_title": "Cert Updater Attempts"
+          },
+          "[\"name\",\"sum_2\"]": {
+            "column_title": "Update Successes"
+          },
+          "[\"name\",\"sum_3\"]": {
+            "column_title": "Update Failures"
+          },
+          "[\"name\",\"sum_4\"]": {
+            "column_title": "Cert Unchanged"
+          }
+        },
+        "table.cell_column": "sum",
+        "table.pivot_column": "sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "yThWYOwEHM3PSv_eZC7jM",
+      "col": 0,
+      "created_at": "2024-08-20T14:08:33.395377Z",
+      "dashboard_tab_id": "IdH6KNjZmoTwwz54_gqG5",
+      "entity_id": "yJYRRr9pjIJZaUasxiVWg",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 120,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 120,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 120,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 24,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Edge Nodes Reported Errors",
+        "table.cell_column": "error_msg",
+        "table.pivot_column": "sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "RM6ELdicF3i_oV0QgSL-W",
+      "col": 0,
+      "created_at": "2024-08-20T14:09:35.198648Z",
+      "dashboard_tab_id": "IdH6KNjZmoTwwz54_gqG5",
+      "entity_id": "Bw6swCwG3NHkcsvW8DLpP",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 118,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 118,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 118,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 14,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {
+        "card.title": "Error Logs",
+        "column_settings": {
+          "[\"name\",\"error_msg\"]": {
+            "column_title": "Error Message"
+          },
+          "[\"name\",\"reported_at\"]": {
+            "column_title": "Timestamp",
+            "date_abbreviate": true
+          },
+          "[\"name\",\"sen_id\"]": {
+            "column_title": "SEN ID"
+          },
+          "[\"name\",\"sp_id\"]": {
+            "column_title": "SP ID"
+          }
+        },
+        "table.cell_column": "error_msg",
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "reported_at"
+          },
+          {
+            "enabled": true,
+            "name": "sp_id"
+          },
+          {
+            "enabled": true,
+            "name": "sen_id"
+          },
+          {
+            "enabled": true,
+            "name": "error_type"
+          },
+          {
+            "enabled": true,
+            "name": "error_code"
+          },
+          {
+            "enabled": true,
+            "name": "error_msg"
+          }
+        ],
+        "table.pivot_column": "sen_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "dzyMGAMWHwL9fx4d1QJ5m",
+      "col": 0,
+      "created_at": "2024-08-20T14:18:06.387490Z",
+      "dashboard_tab_id": "IdH6KNjZmoTwwz54_gqG5",
+      "entity_id": "uR05GG4HnQjFNxHNRQOdd",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 155,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 155,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 155,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 8,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Errors Reported by Node",
+        "graph.dimensions": [
+          "sen_id",
+          "error_type"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false,
+        "stackable.stack_type": "stacked",
+        "table.cell_column": "error_msg",
+        "table.pivot_column": "sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "-uBAV-D7CtP5tdu-43naI",
+      "col": 0,
+      "created_at": "2024-08-20T14:23:57.639688Z",
+      "dashboard_tab_id": "IdH6KNjZmoTwwz54_gqG5",
+      "entity_id": "CyHJEnrgXUrnijy4-WP4F",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 156,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 156,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 156,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 12,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Nodes Reported Errors by Day",
+        "column_settings": {
+          "[\"name\",\"reported_at\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "reported_at",
+          "error_type"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false,
+        "stackable.stack_type": "stacked",
+        "table.cell_column": "error_msg",
+        "table.pivot_column": "sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "Ucvuamz89OYAOB2kYnMHx",
+      "col": 0,
+      "created_at": "2024-08-21T11:01:38.750059Z",
+      "dashboard_tab_id": "Nmn6UWlTGpSA7JiAtFJF5",
+      "entity_id": "Mi-ILUs82K-jXx_elhINF",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 180,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2709,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 180,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2710,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 180,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2714,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 31,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {
+        "card.title": "Recent Summary Metrics Reports",
+        "column_settings": {
+          "[\"name\",\"reported_at\"]": {
+            "date_abbreviate": true
+          },
+          "[\"name\",\"sen_id\"]": {
+            "column_title": "SEN ID"
+          },
+          "[\"name\",\"sp_id\"]": {
+            "column_title": "SP ID"
+          }
+        },
+        "table.cell_column": "postpositioning_bytes",
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "reported_at"
+          },
+          {
+            "enabled": true,
+            "name": "sp_id"
+          },
+          {
+            "enabled": true,
+            "name": "sen_id"
+          },
+          {
+            "enabled": true,
+            "name": "prepositioning_bytes"
+          },
+          {
+            "enabled": true,
+            "name": "postpositioning_bytes"
+          },
+          {
+            "enabled": true,
+            "name": "requests_served"
+          },
+          {
+            "enabled": true,
+            "name": "bytes_served"
+          },
+          {
+            "enabled": true,
+            "name": "upstream_requests"
+          },
+          {
+            "enabled": true,
+            "name": "upstream_bytes"
+          },
+          {
+            "enabled": true,
+            "name": "request_log_pipeline_attempts"
+          }
+        ],
+        "table.pivot_column": "prepositioning_bytes"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "poKzkNUWJYjZB4MmOuxAk",
+      "col": 12,
+      "created_at": "2024-08-22T06:50:37.714747Z",
+      "dashboard_tab_id": "IdH6KNjZmoTwwz54_gqG5",
+      "entity_id": "NI5O4J_k2IhSRnLD-2t7p",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 194,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 194,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 194,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 12,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Errors Reported by Error Code",
+        "graph.dimensions": [
+          "error_code"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false,
+        "stackable.stack_type": "stacked",
+        "table.cell_column": "error_msg",
+        "table.pivot_column": "sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2025-03-11T08:13:02.989487Z",
+      "dashboard_tab_id": "B6beTv4V1e_e9sJvAdf1U",
+      "entity_id": "fxCVPWVPF4RvyOCXtbbEN",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 15,
+      "series": [],
+      "size_x": 24,
+      "size_y": 1,
+      "visualization_settings": {
+        "dashcard.background": false,
+        "text": "Logs",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "k6RPNfgyNA-U7A-zNH1K4",
+      "col": 0,
+      "created_at": "2025-09-26T11:41:21.457860Z",
+      "dashboard_tab_id": "B6beTv4V1e_e9sJvAdf1U",
+      "entity_id": "g-AXkMEfFzjN85H-yMOXT",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 732,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "interval_start",
+              {
+                "base-type": "type/DateTimeWithLocalTZ",
+                "inherited-temporal-unit": "hour"
+              }
+            ],
+            {
+              "stage-number": 1
+            }
+          ]
+        },
+        {
+          "card_id": 732,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 732,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "imputed_sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 9,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Total SENs by SEN Version",
+        "column_settings": {
+          "[\"name\",\"interval_start\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "interval_start",
+          "imputed_edge_node_version"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "graph.x_axis.labels_enabled": false
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "ahkLKpUuugdletGasseSN",
+      "col": 0,
+      "created_at": "2025-09-26T11:49:15.863371Z",
+      "dashboard_tab_id": "B6beTv4V1e_e9sJvAdf1U",
+      "entity_id": "ge-kt9ecZwl9N8H6Jj_Wp",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 733,
+          "parameter_id": "a03868b7",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 733,
+          "parameter_id": "19af7fb6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "interval_start",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 733,
+          "parameter_id": "25915497",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "imputed_sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 38,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {}
+    }
+  ],
+  "description": null,
+  "embedding_params": {
+    "date_range": "enabled",
+    "date_range_certs": "enabled",
+    "sen_id": "enabled",
+    "sp_id": "locked"
+  },
+  "enable_embedding": true,
+  "entity_id": "JU0cQUt_LqJu6R9Adkhxc",
+  "initially_published_at": "2024-08-23T10:37:14.561460Z",
+  "made_public_by_id": "vivek.jaiswal@siden.io",
+  "name": "Dashboard - Edge Nodes",
+  "parameters": [
+    {
+      "default": "past7days~",
+      "id": "19af7fb6",
+      "name": "Date Range",
+      "required": true,
+      "sectionId": "date",
+      "slug": "date_range",
+      "type": "date/all-options"
+    },
+    {
+      "default": "past30days",
+      "id": "6203a1c2",
+      "name": "Date Range Certs",
+      "sectionId": "date",
+      "slug": "date_range_certs",
+      "type": "date/all-options"
+    },
+    {
+      "id": "a03868b7",
+      "name": "SEN ID",
+      "sectionId": "string",
+      "slug": "sen_id",
+      "type": "string/="
+    },
+    {
+      "id": "25915497",
+      "name": "SP ID",
+      "sectionId": "string",
+      "slug": "sp_id",
+      "type": "string/="
+    }
+  ],
+  "points_of_interest": null,
+  "position": null,
+  "public_uuid": "47ae9462-8146-47ae-b0f7-7146fc9df172",
+  "show_in_getting_started": false,
+  "tabs": [
+    {
+      "created_at": "2024-08-20T08:27:08.392821Z",
+      "entity_id": "Nmn6UWlTGpSA7JiAtFJF5",
+      "name": "Overview",
+      "position": 0
+    },
+    {
+      "created_at": "2024-08-20T08:27:08.392821Z",
+      "entity_id": "B6beTv4V1e_e9sJvAdf1U",
+      "name": "Software Updates",
+      "position": 1
+    },
+    {
+      "created_at": "2024-08-20T08:27:08.392821Z",
+      "entity_id": "_TKboD0e859VaXGYHMSLH",
+      "name": "Certificates",
+      "position": 2
+    },
+    {
+      "created_at": "2024-08-20T08:27:08.392821Z",
+      "entity_id": "IdH6KNjZmoTwwz54_gqG5",
+      "name": "SEN Errors",
+      "position": 3
+    }
+  ],
+  "width": "fixed"
+}

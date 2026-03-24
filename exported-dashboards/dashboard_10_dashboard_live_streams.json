@@ -1,0 +1,4244 @@
+{
+  "archived": false,
+  "archived_directly": false,
+  "auto_apply_filters": true,
+  "caveats": null,
+  "collection_id": "snXJuhma-E9E6Yrd_qPIW",
+  "collection_position": null,
+  "created_at": "2024-08-21T11:18:18.244570Z",
+  "creator_id": "doug.dominiak@siden.io",
+  "dashcards": [
+    {
+      "action_id": null,
+      "card_id": "VVhKa1qoakGDAeLepKAHN",
+      "col": 12,
+      "created_at": "2024-08-22T10:37:40.102992Z",
+      "dashboard_tab_id": "mv84bcH1v6gCYr7-7IlFN",
+      "entity_id": "F773m1TIMVvNSLa2w6V-y",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 199,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 199,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 199,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 12,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Channel Start/Stop",
+        "column_settings": {
+          "[\"name\",\"reported_at\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "reported_at"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.labels_enabled": false
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "Rw3Wbj-xMSgqej_iFQKeM",
+      "col": 0,
+      "created_at": "2025-02-26T06:42:58.636371Z",
+      "dashboard_tab_id": "FdsTeWseHruXs0GIWO_Q8",
+      "entity_id": "don-ugVma4I-N-dYKoF_a",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 206,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 206,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 206,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 14,
+      "series": [],
+      "size_x": 12,
+      "size_y": 8,
+      "visualization_settings": {
+        "card.title": "Video Served by Channel (s)",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "stream_name"
+        ],
+        "graph.metrics": [
+          "sum",
+          "sum_2",
+          "sum_3"
+        ],
+        "stackable.stack_type": "stacked"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "beqgbCRQ0JmE-HGR8EpIN",
+      "col": 12,
+      "created_at": "2025-02-26T06:42:58.636371Z",
+      "dashboard_tab_id": "FdsTeWseHruXs0GIWO_Q8",
+      "entity_id": "fD7dRpsMfKsNSn_EM6r17",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 202,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 202,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 202,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Preroll Served (s)",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "sum"
+        ]
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "AVmr5C7PJ21JJjzjPzI21",
+      "col": 0,
+      "created_at": "2025-02-26T06:42:58.636371Z",
+      "dashboard_tab_id": "FdsTeWseHruXs0GIWO_Q8",
+      "entity_id": "XjfU3YTds5HiOQvdEWWEy",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 204,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 204,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 204,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Video Served by Type (s)",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "sum",
+          "sum_2",
+          "sum_3"
+        ],
+        "stackable.stack_type": "stacked"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "3RataUniXNInOnaU_29OH",
+      "col": 0,
+      "created_at": "2025-02-26T06:42:58.636371Z",
+      "dashboard_tab_id": "FdsTeWseHruXs0GIWO_Q8",
+      "entity_id": "mu6KiR5HQOt_qZdxkJO5O",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 205,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 205,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 205,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 8,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Segments Served by Type",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "sum",
+          "sum_2",
+          "sum_3",
+          "sum_4"
+        ],
+        "stackable.stack_type": "stacked"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "uIFBlXK3bxQCsk163nx60",
+      "col": 6,
+      "created_at": "2025-02-26T06:42:58.636371Z",
+      "dashboard_tab_id": "FdsTeWseHruXs0GIWO_Q8",
+      "entity_id": "u5cLEKDIcKa02HLS1Flwv",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 201,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 201,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 201,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Video Served (s)",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "sum"
+        ]
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "pSbKBWVpAMMtQrFnhx7K0",
+      "col": 12,
+      "created_at": "2025-02-26T06:42:58.636371Z",
+      "dashboard_tab_id": "FdsTeWseHruXs0GIWO_Q8",
+      "entity_id": "b6S60eyuHTJaDB5piKYpU",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 207,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 207,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 207,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 14,
+      "series": [],
+      "size_x": 12,
+      "size_y": 8,
+      "visualization_settings": {
+        "card.title": "Video Served by Node (s)",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "sen_id"
+        ],
+        "graph.metrics": [
+          "sum",
+          "sum_2",
+          "sum_3"
+        ],
+        "stackable.stack_type": "stacked"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "aCFqRHPRadNJwIU9ND-Ij",
+      "col": 0,
+      "created_at": "2025-02-26T06:42:58.636371Z",
+      "dashboard_tab_id": "FdsTeWseHruXs0GIWO_Q8",
+      "entity_id": "s8F4vQFAfd69ZB9fI4UOh",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 197,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 197,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 197,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Unique Channels"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "jDEAn49ScssWoFIUZa5Jg",
+      "col": 0,
+      "created_at": "2025-02-26T08:16:51.567959Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "qlLO-9hdbe3-g19xRiV4s",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 208,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 208,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 208,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 208,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 73,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {
+        "card.title": "SEN - Live Stream Progress Logs",
+        "column_settings": {
+          "[\"name\",\"Packet Drop Rate\"]": {
+            "number_style": "percent"
+          },
+          "[\"name\",\"sen_id\"]": {
+            "column_title": "SEN ID"
+          },
+          "[\"name\",\"sp_id\"]": {
+            "column_title": "SP ID"
+          },
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true,
+            "time_enabled": "seconds"
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [],
+        "stackable.stack_type": "stacked",
+        "table.cell_column": "manifests_served",
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "timestamp"
+          },
+          {
+            "enabled": true,
+            "name": "stream_name"
+          },
+          {
+            "enabled": true,
+            "name": "sen_id"
+          },
+          {
+            "enabled": true,
+            "name": "sp_id"
+          },
+          {
+            "enabled": true,
+            "name": "Channel Efficiency"
+          },
+          {
+            "enabled": true,
+            "name": "Packet Drop Rate"
+          },
+          {
+            "enabled": true,
+            "name": "udp_pkt_sent"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_unique"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_loss"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_retrans"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_retrans"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_ack"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_nak"
+          },
+          {
+            "enabled": true,
+            "name": "srt_mbps_recv_rate"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_reorder_distance"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_belated"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_drop"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_undecrypt"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_recv"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_recv_unique"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_recv_loss"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_retrans"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_recv_retrans"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_recv_belated"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_recv_drop"
+          },
+          {
+            "enabled": true,
+            "name": "rtt_ms"
+          },
+          {
+            "enabled": true,
+            "name": "rtt_var_ms"
+          },
+          {
+            "enabled": true,
+            "name": "p0_tput_mbps"
+          },
+          {
+            "enabled": true,
+            "name": "p25_tput_mbps"
+          },
+          {
+            "enabled": true,
+            "name": "p50_tput_mbps"
+          },
+          {
+            "enabled": true,
+            "name": "p75_tput_mbps"
+          },
+          {
+            "enabled": true,
+            "name": "p100_tput_mbps"
+          },
+          {
+            "enabled": true,
+            "name": "p0_rtt_ms"
+          },
+          {
+            "enabled": true,
+            "name": "p25_rtt_ms"
+          },
+          {
+            "enabled": true,
+            "name": "p50_rtt_ms"
+          },
+          {
+            "enabled": true,
+            "name": "p75_rtt_ms"
+          },
+          {
+            "enabled": true,
+            "name": "p100_rtt_ms"
+          },
+          {
+            "enabled": true,
+            "name": "reporting_interval_secs"
+          },
+          {
+            "enabled": true,
+            "name": "downloaded_bytes"
+          },
+          {
+            "enabled": false,
+            "name": "manifests_served"
+          },
+          {
+            "enabled": false,
+            "name": "preroll_segments_served"
+          },
+          {
+            "enabled": false,
+            "name": "live_segments_served"
+          },
+          {
+            "enabled": false,
+            "name": "placard_segments_served"
+          },
+          {
+            "enabled": false,
+            "name": "preroll_segments_duration"
+          },
+          {
+            "enabled": false,
+            "name": "live_segments_duration"
+          },
+          {
+            "enabled": false,
+            "name": "placard_segments_duration"
+          },
+          {
+            "enabled": false,
+            "name": "switched_to_placard"
+          },
+          {
+            "enabled": false,
+            "name": "switched_to_live"
+          },
+          {
+            "enabled": false,
+            "name": "srt_pkt_sent"
+          },
+          {
+            "enabled": false,
+            "name": "srt_pkt_sent_unique"
+          },
+          {
+            "enabled": false,
+            "name": "srt_pkt_send_loss"
+          },
+          {
+            "enabled": false,
+            "name": "srt_pkt_sent_ack"
+          },
+          {
+            "enabled": false,
+            "name": "srt_pkt_sent_nak"
+          },
+          {
+            "enabled": false,
+            "name": "srt_mbps_send_rate"
+          },
+          {
+            "enabled": false,
+            "name": "srt_us_snd_duration"
+          },
+          {
+            "enabled": false,
+            "name": "srt_pkt_snd_drop"
+          },
+          {
+            "enabled": false,
+            "name": "srt_byte_sent"
+          },
+          {
+            "enabled": false,
+            "name": "srt_byte_sent_unique"
+          },
+          {
+            "enabled": false,
+            "name": "srt_byte_send_drop"
+          },
+          {
+            "enabled": false,
+            "name": "srt_byte_recv_undecrypt"
+          }
+        ],
+        "table.pivot_column": "sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "vvkbbliY5zPjgWHeFsfaW",
+      "col": 0,
+      "created_at": "2025-02-26T08:38:39.278609Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "YaZje7VQB_e-sji7uvVEF",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 266,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 266,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 266,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 266,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 31,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "SRT Protocol - Agg Throughput (Packets)",
+        "column_settings": {
+          "[\"name\",\"avg\"]": {
+            "number_style": "percent"
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "sum",
+          "sum_2",
+          "avg"
+        ],
+        "series_settings": {
+          "avg": {
+            "axis": "right"
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "O49krwLE8MMqukjcwqA70",
+      "col": 0,
+      "created_at": "2025-02-26T08:47:33.737080Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "k8NTccm2izf9EJMp4uUCC",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 267,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 267,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 267,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 267,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 37,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "SRT Protocol - Video Packet Residual Loss Rate - Hourly",
+        "column_settings": {
+          "[\"name\",\"avg\"]": {
+            "number_style": "percent"
+          },
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "sum",
+          "sum_2",
+          "avg"
+        ],
+        "series_settings": {
+          "avg": {
+            "axis": "right"
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "rPGCdZPNO8hkoA7XMZ5tM",
+      "col": 0,
+      "created_at": "2025-02-26T10:20:41.448221Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "Xrs1mu5fsdqxq-NKheFm4",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 268,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 268,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 268,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 268,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 43,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "SRT Protocol - Video Packet Residual Loss Rate - 5-Min",
+        "column_settings": {
+          "[\"name\",\"avg\"]": {
+            "number_style": "percent"
+          },
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "sum",
+          "sum_2",
+          "avg"
+        ],
+        "series_settings": {
+          "avg": {
+            "axis": "right"
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "uM60mM_rb63ikKZlVLpYE",
+      "col": 0,
+      "created_at": "2025-02-26T10:29:55.392316Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "_oeS8A240Yz7y2Io8I_D-",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 269,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 269,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 269,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 269,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 62,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {
+        "card.title": "SEN - Live Stream Start/Stop Logs",
+        "column_settings": {
+          "[\"name\",\"reported_at\"]": {
+            "date_abbreviate": true,
+            "time_enabled": "seconds"
+          },
+          "[\"name\",\"sen_id\"]": {
+            "column_title": "SEN ID"
+          },
+          "[\"name\",\"sp_id\"]": {
+            "column_title": "SP ID"
+          }
+        },
+        "table.cell_column": "state",
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "reported_at"
+          },
+          {
+            "enabled": true,
+            "name": "stream_name"
+          },
+          {
+            "enabled": true,
+            "name": "sen_id"
+          },
+          {
+            "enabled": true,
+            "name": "sp_id"
+          },
+          {
+            "enabled": true,
+            "name": "Stream State"
+          },
+          {
+            "enabled": false,
+            "name": "state"
+          }
+        ],
+        "table.pivot_column": "sp_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "_rDmeGCsvIWzS1u8qCCbw",
+      "col": 12,
+      "created_at": "2025-02-26T11:04:13.808949Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "Psazm2iG8k-Evg11JQUGf",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 271,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 271,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 271,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 271,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "SRT Bytes Rx (GB)"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "MfBH67zJ-6FiruYjLE-Dk",
+      "col": 18,
+      "created_at": "2025-02-26T11:04:13.808949Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "x8U_tyt5hw7cYF3YYKfEW",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 270,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 270,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 270,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 270,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "SRT Packets Rx (M)"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2025-02-26T11:19:38.282550Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "9I_YrxqYanC4W5swItvVT",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 61,
+      "series": [],
+      "size_x": 24,
+      "size_y": 1,
+      "visualization_settings": {
+        "dashcard.background": false,
+        "text": "Logs",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2025-02-26T11:19:38.282550Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "2GFNVnGitqiZI0FdM9uex",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 16,
+      "series": [],
+      "size_x": 24,
+      "size_y": 1,
+      "visualization_settings": {
+        "dashcard.background": false,
+        "text": "SRT Transport",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "105hK3ckSZTggfRMKl03N",
+      "col": 18,
+      "created_at": "2025-02-27T17:01:09.041121Z",
+      "dashboard_tab_id": "FdsTeWseHruXs0GIWO_Q8",
+      "entity_id": "G010nNzZlKTxJYHid17WW",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 203,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 203,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 203,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Placard Served (s)",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "sum"
+        ]
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "X5D8djpp68nc0dc4Iliwh",
+      "col": 0,
+      "created_at": "2025-02-27T17:43:20.546641Z",
+      "dashboard_tab_id": "mv84bcH1v6gCYr7-7IlFN",
+      "entity_id": "h8OxH82uPEVomvdTK57lR",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 278,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 278,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 278,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 8,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Channels Served by Node",
+        "graph.dimensions": [
+          "sen_id",
+          "sp_id"
+        ],
+        "graph.metrics": [
+          "count"
+        ]
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "OlOgN40wPV1VW0GPnRSj9",
+      "col": 6,
+      "created_at": "2025-03-12T11:20:17.252451Z",
+      "dashboard_tab_id": "mv84bcH1v6gCYr7-7IlFN",
+      "entity_id": "-5s7sN0-huqRZrprDVBK6",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 243,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 243,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 243,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Nodes Served Live Streams",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "count"
+        ]
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "kt5xUpi5p6PpVcBMw3rWR",
+      "col": 12,
+      "created_at": "2025-03-12T11:22:26.440829Z",
+      "dashboard_tab_id": "mv84bcH1v6gCYr7-7IlFN",
+      "entity_id": "L_FRTnoIgSIsaB5V0aMnn",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 242,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 242,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 242,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 12,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Unique Channels",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "count"
+        ]
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "iYM33Chnko7e7av0c8D-g",
+      "col": 0,
+      "created_at": "2025-03-12T11:27:38.580308Z",
+      "dashboard_tab_id": "mv84bcH1v6gCYr7-7IlFN",
+      "entity_id": "ZfIHtiZPlmUqGa7UMKlTI",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 372,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 372,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 372,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 12,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Unique Channels Served",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.y_axis.axis_enabled": true,
+        "graph.y_axis.labels_enabled": false
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "OlOgN40wPV1VW0GPnRSj9",
+      "col": 6,
+      "created_at": "2025-03-12T11:31:57.763720Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "ChAByh0GzvlTveaRnZVZD",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 243,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 243,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 243,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 243,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Active SENs",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "count"
+        ]
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "b734ipJxJoOwMv8I2VQ9Z",
+      "col": 0,
+      "created_at": "2025-03-12T11:37:42.104314Z",
+      "dashboard_tab_id": "mv84bcH1v6gCYr7-7IlFN",
+      "entity_id": "0kA9WJOPVqw_KgizyVJq3",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 43,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2709,
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 43,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2710,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 43,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              2714,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Active Edge Nodes"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "i-dT_BzkXQ709OC7uA4tX",
+      "col": 0,
+      "created_at": "2025-03-13T06:35:47.496539Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "ivmZQ1H4_ERdVNof3tCom",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 386,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 386,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 386,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 386,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 49,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "SRT Protocol - Selective Retransmission (Pkts) - Hourly",
+        "column_settings": {
+          "[\"name\",\"avg\"]": {
+            "number_style": "percent"
+          },
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "sum",
+          "sum_2",
+          "avg"
+        ],
+        "series_settings": {
+          "avg": {
+            "axis": "right"
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "sGDY3gn4avZ0rtxMoSs75",
+      "col": 0,
+      "created_at": "2025-03-13T06:35:47.496539Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "xFMoHW2FlT1H-8XA2GtRM",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 387,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 387,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 387,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 387,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 55,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "SRT Protocol - Selective Retransmission (Pkts) - 5-Min",
+        "column_settings": {
+          "[\"name\",\"avg\"]": {
+            "number_style": "percent"
+          },
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp"
+        ],
+        "graph.metrics": [
+          "sum",
+          "sum_2",
+          "avg"
+        ],
+        "series_settings": {
+          "avg": {
+            "axis": "right"
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "fnm_LKoHFHodYRJwPUtLG",
+      "col": 0,
+      "created_at": "2025-05-07T07:18:04.328719Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "HF9eWcbfXBHutuyvHOw2a",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 399,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 399,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithTZ",
+                "inherited-temporal-unit": "default"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 399,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 399,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 17,
+      "series": [],
+      "size_x": 24,
+      "size_y": 8,
+      "visualization_settings": {
+        "card.title": "SRT Protocol - Channel Throughput - Avg (Mbps)",
+        "column_settings": {
+          "[\"name\",\"timestamp\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp",
+          "stream_name"
+        ],
+        "graph.metrics": [
+          "avg"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "graph.x_axis.labels_enabled": false
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "IKpKc4XqXxWQpttGJu7Dl",
+      "col": 0,
+      "created_at": "2025-07-08T12:05:37.689439Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "Z-mkyZLozzNLf0rPUH9io",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 434,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 434,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 434,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp_trunc_hr",
+              {
+                "base-type": "type/DateTimeWithLocalTZ",
+                "inherited-temporal-unit": "hour"
+              }
+            ],
+            {
+              "stage-number": 1
+            }
+          ]
+        }
+      ],
+      "row": 25,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "SRT Protocol - Agg Throughput (Mbps)",
+        "graph.dimensions": [
+          "timestamp_trunc_hr"
+        ],
+        "graph.metrics": [
+          "avg"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "B39jEmnM7w19I9oi5kbpY",
+      "col": 0,
+      "created_at": "2025-07-23T06:54:00.539828Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "qcnA9R9BamDXHfx0dCYTl",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 512,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 512,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 512,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 512,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 8,
+      "series": [],
+      "size_x": 24,
+      "size_y": 8,
+      "visualization_settings": {
+        "card.title": "Channel Rate - Avg (Mbps)",
+        "graph.dimensions": [
+          "timestamp",
+          "stream_name"
+        ],
+        "graph.metrics": [
+          "avg"
+        ]
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2025-10-15T13:56:12.626764Z",
+      "dashboard_tab_id": "S67afZl3sRLNc-Q-RGrkG",
+      "entity_id": "dU5q43dynSlHpCEdX2DdF",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 13,
+      "series": [],
+      "size_x": 24,
+      "size_y": 1,
+      "visualization_settings": {
+        "dashcard.background": false,
+        "text": "Ship-side Channel Status",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "JkEI7htme_VVJibnvD6M8",
+      "col": 8,
+      "created_at": "2025-10-15T13:58:45.507815Z",
+      "dashboard_tab_id": "S67afZl3sRLNc-Q-RGrkG",
+      "entity_id": "6cftC-ms91Xsf5IY-WttU",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 501,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp_trunc_5min",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 501,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 4,
+      "series": [],
+      "size_x": 16,
+      "size_y": 4,
+      "visualization_settings": {
+        "card.title": "All Channels Aggregate Bandwidth - PoP to Ship (Mbps)",
+        "column_settings": {
+          "[\"name\",\"timestamp_trunc_5min\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp_trunc_5min"
+        ],
+        "graph.metrics": [
+          "agg_send_throughput"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "vUkMXJ40Xb94yR0J46QBJ",
+      "col": 0,
+      "created_at": "2025-10-15T13:58:45.507815Z",
+      "dashboard_tab_id": "S67afZl3sRLNc-Q-RGrkG",
+      "entity_id": "Bebfwq4PneeVkE0SBFWB1",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 502,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp_trunc_5min",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 502,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 502,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 31,
+      "series": [],
+      "size_x": 24,
+      "size_y": 8,
+      "visualization_settings": {
+        "card.title": "Per Channel Bandwidth - PoP to Ship (Mbps)",
+        "column_settings": {
+          "[\"name\",\"timestamp_trunc_5min\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp_trunc_5min",
+          "stream_name"
+        ],
+        "graph.metrics": [
+          "avg_send_throughput"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2025-10-15T13:58:45.507815Z",
+      "dashboard_tab_id": "S67afZl3sRLNc-Q-RGrkG",
+      "entity_id": "WPAlhcMhauNOv_g8yDO4C",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 22,
+      "series": [],
+      "size_x": 24,
+      "size_y": 1,
+      "visualization_settings": {
+        "dashcard.background": false,
+        "text": "PoP (Shore-side) Channel Status",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "Ae8KyR64g-ohJppCkQmLJ",
+      "col": 8,
+      "created_at": "2025-10-16T12:31:44.889700Z",
+      "dashboard_tab_id": "S67afZl3sRLNc-Q-RGrkG",
+      "entity_id": "0Mrb0GCE2TJsFuJSF2Q_m",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 742,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp_trunc_5min",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 742,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 742,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 8,
+      "series": [],
+      "size_x": 16,
+      "size_y": 5,
+      "visualization_settings": {
+        "card.title": "All Channels Aggregate Bandwidth - Ship-side (Mbps)",
+        "column_settings": {
+          "[\"name\",\"timestamp_trunc_5min\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp_trunc_5min"
+        ],
+        "graph.metrics": [
+          "agg_recv_throughput"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "siKDNF-JaN4SBKH_H2oVa",
+      "col": 0,
+      "created_at": "2025-10-16T12:31:44.889700Z",
+      "dashboard_tab_id": "S67afZl3sRLNc-Q-RGrkG",
+      "entity_id": "fSrVWWoOaEMcmKhKwgS46",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 741,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp_trunc_5min",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 741,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 741,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 741,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 14,
+      "series": [],
+      "size_x": 24,
+      "size_y": 8,
+      "visualization_settings": {
+        "card.title": "Per Channel Bandwidth - Ship-side (Mbps)",
+        "column_settings": {
+          "[\"name\",\"timestamp_trunc_5min\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp_trunc_5min",
+          "stream_name"
+        ],
+        "graph.metrics": [
+          "avg"
+        ]
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "tv2CwNPYQk3ho0PgpmQEO",
+      "col": 0,
+      "created_at": "2025-10-17T06:07:15.006223Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "x4bQ8Y73nKAsk__6H7kKP",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 737,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 737,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 737,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 737,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 6,
+      "size_y": 2,
+      "visualization_settings": {
+        "card.title": "Active Channels"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "SYIvHIzyot-4JmHOIuhWn",
+      "col": 0,
+      "created_at": "2025-10-28T07:25:44.046604Z",
+      "dashboard_tab_id": "S67afZl3sRLNc-Q-RGrkG",
+      "entity_id": "mE3wWFLOWi6Cxrf8DMMYv",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 771,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp_trunc_5min",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 771,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 771,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 23,
+      "series": [],
+      "size_x": 24,
+      "size_y": 8,
+      "visualization_settings": {
+        "card.title": "Per Channel Bandwidth - Input from Source (Mbps)",
+        "column_settings": {
+          "[\"name\",\"timestamp_trunc_5min\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "timestamp_trunc_5min",
+          "stream_name"
+        ],
+        "graph.metrics": [
+          "avg_recv_throughput"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "J6smQtg2MdtIdNAWbSQ05",
+      "col": 8,
+      "created_at": "2025-11-24T14:30:04.488982Z",
+      "dashboard_tab_id": "S67afZl3sRLNc-Q-RGrkG",
+      "entity_id": "cYYYeNi-D31sAzzpTWVDz",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 770,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp_trunc_5min",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 16,
+      "size_y": 4,
+      "visualization_settings": {
+        "card.title": "All Channels Aggregate Bandwidth - Input from Source (Mbps)",
+        "column_settings": {},
+        "graph.dimensions": [
+          "timestamp_trunc_5min"
+        ],
+        "graph.metrics": [
+          "agg_recv_throughput"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "series_settings": {
+          "agg_recv_throughput": {
+            "line.missing": "zero"
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "Mr5rCeBd1L9t3wZoW5V4G",
+      "col": 18,
+      "created_at": "2025-12-02T12:13:46.711464Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "JDb3nd1ISWl59ZD4aGvtq",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 860,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 860,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 860,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 860,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 6,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.title": "Channel Starts"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "yDPmunbG6Vov3ltLLjS0n",
+      "col": 18,
+      "created_at": "2025-12-02T12:13:46.711464Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "ARIDlSpmHYqDrnukrQQiv",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 861,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 861,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 861,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 861,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 5,
+      "series": [],
+      "size_x": 6,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.title": "Channel Stops"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "hsKNZbZXdHc22zQdeE133",
+      "col": 0,
+      "created_at": "2025-12-02T12:13:46.711464Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "V4cbLMBiKULObbjKHTYyc",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 450,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 450,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 450,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 450,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 2,
+      "series": [],
+      "size_x": 18,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Channel Start/Stop",
+        "column_settings": {
+          "[\"name\",\"reported_at\"]": {
+            "date_abbreviate": true
+          }
+        },
+        "graph.dimensions": [
+          "reported_at",
+          "stream_state"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "graph.show_trendline": false,
+        "stackable.stack_type": "stacked"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "cpvEC3L28Fhl47MzEG_2t",
+      "col": 0,
+      "created_at": "2025-12-02T12:26:42.990768Z",
+      "dashboard_tab_id": "wTe80H2DWzRWxTBakuWHs",
+      "entity_id": "1KXw5eml_ZoDrztHbiHIx",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 437,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 437,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 437,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 437,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 84,
+      "series": [],
+      "size_x": 24,
+      "size_y": 10,
+      "visualization_settings": {
+        "card.title": "MTN - Live Stream Start/Stop Logs",
+        "column_settings": {
+          "[\"name\",\"mtn_id\"]": {
+            "column_title": "MTN ID"
+          },
+          "[\"name\",\"reported_at\"]": {
+            "date_abbreviate": true,
+            "time_enabled": "seconds"
+          },
+          "[\"name\",\"sen_id\"]": {
+            "column_title": "SEN ID"
+          },
+          "[\"name\",\"sp_id\"]": {
+            "column_title": "SP ID"
+          }
+        },
+        "table.cell_column": "stream_stopped_msg",
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "reported_at"
+          },
+          {
+            "enabled": true,
+            "name": "stream_name"
+          },
+          {
+            "enabled": true,
+            "name": "sen_id"
+          },
+          {
+            "enabled": true,
+            "name": "mtn_id"
+          },
+          {
+            "enabled": true,
+            "name": "sp_id"
+          },
+          {
+            "enabled": true,
+            "name": "event_source"
+          },
+          {
+            "enabled": true,
+            "name": "stream_state"
+          },
+          {
+            "enabled": true,
+            "name": "stream_stopped_msg"
+          }
+        ],
+        "table.pivot_column": "mtn_id"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "WYZPWhCkXnOajF4K0o9XN",
+      "col": 0,
+      "created_at": "2026-01-20T11:08:06.506926Z",
+      "dashboard_tab_id": "_0bVjb2mP0cdGA9-GIplp",
+      "entity_id": "0O0Mh2Xkwo_rth-dl13Xa",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 925,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 925,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 925,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 925,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 24,
+      "size_y": 10,
+      "visualization_settings": {
+        "card.title": "Total Watch Time by Channel",
+        "graph.dimensions": [
+          "stream_name"
+        ],
+        "graph.metrics": [
+          "sum",
+          "sum_2"
+        ],
+        "stackable.stack_type": "stacked",
+        "table.cell_column": "sum",
+        "table.pivot_column": "stream_name"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "JwDJj9n_VceKnWfiP0BhU",
+      "col": 0,
+      "created_at": "2026-01-21T08:32:51.848073Z",
+      "dashboard_tab_id": "_0bVjb2mP0cdGA9-GIplp",
+      "entity_id": "g-UONhtRb7xnHeO8Auir5",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 933,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "reported_at",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 933,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 933,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 933,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 10,
+      "series": [],
+      "size_x": 24,
+      "size_y": 8,
+      "visualization_settings": {}
+    },
+    {
+      "action_id": null,
+      "card_id": "Kzzjfp3Bn7MY9ZB88ZZDF",
+      "col": 0,
+      "created_at": "2026-02-06T13:36:05.289966Z",
+      "dashboard_tab_id": "S67afZl3sRLNc-Q-RGrkG",
+      "entity_id": "k9FSwXTi_7ZcmKScvoqlb",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 947,
+          "parameter_id": "f68cd6f6",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "mtn_timestamp",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 947,
+          "parameter_id": "a1ddf86c",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 947,
+          "parameter_id": "9bcced54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sp_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 947,
+          "parameter_id": "2cee0147",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 8,
+      "size_y": 13,
+      "visualization_settings": {
+        "card.title": "Channel Status",
+        "column_settings": {
+          "[\"name\",\"d2.row_num\"]": {},
+          "[\"name\",\"d2.sp_id\"]": {},
+          "[\"name\",\"d2.stream_name\"]": {},
+          "[\"name\",\"interval_mbps_send_rate\"]": {},
+          "[\"name\",\"last_mtn_id\"]": {},
+          "[\"name\",\"last_mtn_send_rate_moving_avg\"]": {},
+          "[\"name\",\"last_sen_recv_rate_moving_avg\"]": {},
+          "[\"name\",\"mtn_duration_seconds\"]": {},
+          "[\"name\",\"mtn_id\"]": {
+            "column_title": "MTN ID"
+          },
+          "[\"name\",\"mtn_send_rate_moving_avg\"]": {},
+          "[\"name\",\"mtn_stream_health_active\"]": {},
+          "[\"name\",\"mtn_stream_health_bitrate\"]": {},
+          "[\"name\",\"mtn_stream_status\"]": {
+            "column_title": "PoP"
+          },
+          "[\"name\",\"mtn_stream_status_reason\"]": {
+            "column_title": "PoP Status Reason"
+          },
+          "[\"name\",\"mtn_timestamp\"]": {},
+          "[\"name\",\"reported_at\"]": {},
+          "[\"name\",\"row_num\"]": {},
+          "[\"name\",\"sen_duration_seconds\"]": {},
+          "[\"name\",\"sen_id\"]": {},
+          "[\"name\",\"sen_recv_rate_moving_avg\"]": {},
+          "[\"name\",\"sen_stream_health_active\"]": {},
+          "[\"name\",\"sen_stream_health_bitrate\"]": {},
+          "[\"name\",\"sen_stream_status\"]": {
+            "column_title": "Ship"
+          },
+          "[\"name\",\"sen_stream_status_reason\"]": {
+            "column_title": "Ship Status Reason"
+          },
+          "[\"name\",\"sen_timestamp\"]": {},
+          "[\"name\",\"sp_id\"]": {},
+          "[\"name\",\"srt_mbps_recv_rate\"]": {},
+          "[\"name\",\"stream_name\"]": {
+            "column_title": "Channel Name"
+          },
+          "[\"name\",\"timestamp\"]": {}
+        },
+        "table.cell_column": "interval_mbps_send_rate",
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "stream_name"
+          },
+          {
+            "enabled": true,
+            "name": "mtn_stream_status"
+          },
+          {
+            "enabled": true,
+            "name": "sen_stream_status"
+          },
+          {
+            "enabled": false,
+            "name": "mtn_stream_status_reason"
+          },
+          {
+            "enabled": false,
+            "name": "sen_stream_status_reason"
+          },
+          {
+            "enabled": false,
+            "name": "mtn_id"
+          },
+          {
+            "enabled": false,
+            "name": "reported_at"
+          },
+          {
+            "enabled": false,
+            "name": "sp_id"
+          },
+          {
+            "enabled": false,
+            "name": "interval_mbps_send_rate"
+          },
+          {
+            "enabled": false,
+            "name": "row_num"
+          },
+          {
+            "enabled": false,
+            "name": "mtn_send_rate_moving_avg"
+          },
+          {
+            "enabled": false,
+            "name": "timestamp"
+          },
+          {
+            "enabled": false,
+            "name": "d2.sp_id"
+          },
+          {
+            "enabled": false,
+            "name": "sen_id"
+          },
+          {
+            "enabled": false,
+            "name": "d2.stream_name"
+          },
+          {
+            "enabled": false,
+            "name": "srt_mbps_recv_rate"
+          },
+          {
+            "enabled": false,
+            "name": "d2.row_num"
+          },
+          {
+            "enabled": false,
+            "name": "sen_recv_rate_moving_avg"
+          },
+          {
+            "enabled": false,
+            "name": "mtn_timestamp"
+          },
+          {
+            "enabled": false,
+            "name": "sen_timestamp"
+          },
+          {
+            "enabled": false,
+            "name": "last_mtn_id"
+          },
+          {
+            "enabled": false,
+            "name": "last_mtn_send_rate_moving_avg"
+          },
+          {
+            "enabled": false,
+            "name": "last_sen_recv_rate_moving_avg"
+          },
+          {
+            "enabled": false,
+            "name": "mtn_stream_health_active"
+          },
+          {
+            "enabled": false,
+            "name": "mtn_stream_health_bitrate"
+          },
+          {
+            "enabled": false,
+            "name": "sen_duration_seconds"
+          },
+          {
+            "enabled": false,
+            "name": "sen_stream_health_active"
+          },
+          {
+            "enabled": false,
+            "name": "sen_stream_health_bitrate"
+          },
+          {
+            "enabled": false,
+            "name": "mtn_duration_seconds"
+          }
+        ],
+        "table.pivot_column": "sp_id"
+      }
+    }
+  ],
+  "description": null,
+  "embedding_params": {
+    "channel": "enabled",
+    "date_range": "enabled",
+    "sen_id": "enabled",
+    "sp_id": "locked"
+  },
+  "enable_embedding": true,
+  "entity_id": "vURfxPms0PUFyDBAO81Fq",
+  "initially_published_at": "2024-08-23T10:38:06.356409Z",
+  "made_public_by_id": "vivek.jaiswal@siden.io",
+  "name": "Dashboard - Live Streams",
+  "parameters": [
+    {
+      "default": "past1days~",
+      "id": "f68cd6f6",
+      "name": "Date Range",
+      "sectionId": "date",
+      "slug": "date_range",
+      "type": "date/all-options"
+    },
+    {
+      "id": "a1ddf86c",
+      "name": "SEN ID",
+      "sectionId": "string",
+      "slug": "sen_id",
+      "type": "string/="
+    },
+    {
+      "id": "9bcced54",
+      "name": "SP ID",
+      "sectionId": "string",
+      "slug": "sp_id",
+      "type": "string/="
+    },
+    {
+      "id": "2cee0147",
+      "name": "Channel",
+      "sectionId": "string",
+      "slug": "channel",
+      "type": "string/="
+    }
+  ],
+  "points_of_interest": null,
+  "position": null,
+  "public_uuid": "1345e9d5-9027-408c-9999-4ff0e45b604d",
+  "show_in_getting_started": false,
+  "tabs": [
+    {
+      "created_at": "2025-02-26T06:42:58.636371Z",
+      "entity_id": "mv84bcH1v6gCYr7-7IlFN",
+      "name": "Overview",
+      "position": 0
+    },
+    {
+      "created_at": "2025-02-26T06:42:58.636371Z",
+      "entity_id": "wTe80H2DWzRWxTBakuWHs",
+      "name": "MPEG TS",
+      "position": 1
+    },
+    {
+      "created_at": "2025-02-26T06:42:58.636371Z",
+      "entity_id": "FdsTeWseHruXs0GIWO_Q8",
+      "name": "HLS",
+      "position": 2
+    },
+    {
+      "created_at": "2025-10-15T13:10:08.231150Z",
+      "entity_id": "S67afZl3sRLNc-Q-RGrkG",
+      "name": "IPTV Operations",
+      "position": 3
+    },
+    {
+      "created_at": "2026-01-20T11:08:06.506926Z",
+      "entity_id": "_0bVjb2mP0cdGA9-GIplp",
+      "name": "Channel Viewership",
+      "position": 4
+    }
+  ],
+  "width": "full"
+}

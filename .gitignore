@@ -176,3 +176,8 @@ CLAUDE.local.md
 /resources/python-sources/sqlglot-*.dist-info/
 /resources/python-sources/.lock
 __pycache__/
+
+# Nix dev shell ephemeral Postgres
+.pgdata/
+.pgsocket/
+.postgres.log

@@ -1,0 +1,2596 @@
+{
+  "archived": false,
+  "archived_directly": false,
+  "auto_apply_filters": true,
+  "caveats": null,
+  "collection_id": "53YGAg4EE6MC76nxx-f5f",
+  "collection_position": 2,
+  "created_at": "2024-08-12T11:04:30.816921Z",
+  "creator_id": "internal@metabase.com",
+  "dashcards": [
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "PS7GW5IfD3ov0haogAPLu",
+      "entity_id": "Cb92ioon7vWaER-4OcdDS",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 0,
+      "series": [],
+      "size_x": 24,
+      "size_y": 1,
+      "visualization_settings": {
+        "column_settings": null,
+        "dashcard.background": false,
+        "text": "Overall business health",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "z5IymDhXzRY2kF79LxQIN",
+      "entity_id": "s2ZdKLKOql1B0gCbOh3XO",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 0,
+      "series": [],
+      "size_x": 24,
+      "size_y": 1,
+      "visualization_settings": {
+        "column_settings": null,
+        "dashcard.background": false,
+        "text": "Top performing products",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 17,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "z5IymDhXzRY2kF79LxQIN",
+      "entity_id": "Jtd-7AGoT0MNS4CxhVjei",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 1,
+      "series": [],
+      "size_x": 7,
+      "size_y": 2,
+      "visualization_settings": {
+        "text": "### Top three all-time products \nMoM performance",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "text",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "TKyJ0onLUPOuZgVfwZfU1",
+      "entity_id": "xmP43pM4LHbrbRP-rjT-j",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 0,
+      "series": [],
+      "size_x": 24,
+      "size_y": 1,
+      "visualization_settings": {
+        "column_settings": null,
+        "dashcard.background": false,
+        "text": "Who  and where are our customers",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "z5IymDhXzRY2kF79LxQIN",
+      "entity_id": "tNvUvy6ezg0rUhV9baI0O",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 12,
+      "series": [],
+      "size_x": 24,
+      "size_y": 1,
+      "visualization_settings": {
+        "column_settings": null,
+        "dashcard.background": false,
+        "text": "Product category insights",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "TKyJ0onLUPOuZgVfwZfU1",
+      "entity_id": "P37ixkaPafIr47ep0oypD",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 7,
+      "series": [],
+      "size_x": 24,
+      "size_y": 1,
+      "visualization_settings": {
+        "column_settings": null,
+        "dashcard.background": false,
+        "text": "Age insights breakdowns",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": null,
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "z5IymDhXzRY2kF79LxQIN",
+      "entity_id": "wRqWXKjFJ_d3t34HXl7Vg",
+      "inline_parameters": [],
+      "parameter_mappings": [],
+      "row": 18,
+      "series": [],
+      "size_x": 24,
+      "size_y": 1,
+      "visualization_settings": {
+        "column_settings": null,
+        "dashcard.background": false,
+        "text": "Customer satisfaction insights",
+        "virtual_card": {
+          "archived": false,
+          "dataset_query": {},
+          "display": "heading",
+          "name": null,
+          "visualization_settings": {}
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "oShRjudlgUvJRezvGTQTD",
+      "col": 17,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "z5IymDhXzRY2kF79LxQIN",
+      "entity_id": "g6Z9N7QjvtdQbEHaAgxhY",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 1,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 1,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 1,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 1,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 3,
+      "series": [],
+      "size_x": 7,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.description": "Compares the total number of orders placed for this product this month with the previous period",
+        "column_settings": null
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "OouzOUPGIjf6zXJsSDe0f",
+      "col": 12,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "PS7GW5IfD3ov0haogAPLu",
+      "entity_id": "xZFChb3ro-2jzg7I767yY",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 20,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 20,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 20,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 20,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 1,
+      "series": [],
+      "size_x": 6,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.description": "Compares the total number of orders placed this month with the previous period",
+        "column_settings": null
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "dsZMohGmK4P7eQRBdLFmb",
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "z5IymDhXzRY2kF79LxQIN",
+      "entity_id": "zfSwuSU-8e6O3eqyt9r16",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 23,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "PRODUCTS__via__PRODUCT_ID__TITLE",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 1
+            }
+          ]
+        }
+      ],
+      "row": 1,
+      "series": [],
+      "size_x": 17,
+      "size_y": 11,
+      "visualization_settings": {
+        "card.description": "An ordered list of our most successful products",
+        "card.title": "Best selling products",
+        "column_settings": null,
+        "graph.dimensions": [
+          "TITLE"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.x_axis.title_text": "Products",
+        "graph.y_axis.title_text": "number of orders",
+        "series_settings": {
+          "count": {
+            "color": "#999AC4"
+          }
+        },
+        "table.pivot": false
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "rqxxsDv8zhSBXgJmVjyWa",
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "TKyJ0onLUPOuZgVfwZfU1",
+      "entity_id": "h_f6hPOFg0FN3m6VA5B03",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 3,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 3,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 3,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 3,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 8,
+      "series": [],
+      "size_x": 9,
+      "size_y": 6,
+      "visualization_settings": {
+        "column_settings": null,
+        "graph.dimensions": [
+          "Age"
+        ],
+        "graph.metrics": [
+          "sum"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "graph.show_values": true,
+        "graph.x_axis.scale": "ordinal",
+        "stackable.stack_type": "stacked",
+        "table.cell_column": "SUBTOTAL"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "qj0jT7SXwEUezz1wSjtaZ",
+      "col": 9,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "TKyJ0onLUPOuZgVfwZfU1",
+      "entity_id": "vJZR2mN2xRrXiqqwAc0eb",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 4,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 1,
+      "series": [],
+      "size_x": 15,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.description": "Shows a distribution of our customers in age groups",
+        "card.title": "Buyers by age group",
+        "graph.dimensions": [
+          "count"
+        ],
+        "graph.metrics": [
+          "count_2"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "graph.x_axis.scale": "ordinal",
+        "graph.x_axis.title_text": "Age",
+        "graph.y_axis.title_text": "Buyers",
+        "series_settings": {
+          "count": {
+            "color": "#A989C5"
+          },
+          "count_2": {
+            "color": "#999AC4"
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "nhFZBIIZA_KnK6RuLp36z",
+      "col": 17,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "z5IymDhXzRY2kF79LxQIN",
+      "entity_id": "Q4sD1F6XrD8dVPD2JHV1Z",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 5,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 5,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 5,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 5,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 6,
+      "series": [],
+      "size_x": 7,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.description": "Compares the total number of orders placed for this product this month with the previous period",
+        "column_settings": null
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "1aVGgD6-onGIPUeWCLiMA",
+      "col": 17,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "z5IymDhXzRY2kF79LxQIN",
+      "entity_id": "C3ByFOdgRYsNwwXVTGfY-",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 6,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 6,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 6,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 6,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 13,
+      "series": [],
+      "size_x": 7,
+      "size_y": 5,
+      "visualization_settings": {
+        "card.description": "Breaks down the overall performance of each of the product categories ",
+        "card.title": "Total orders by category",
+        "column_settings": null,
+        "pie.colors": {
+          "Doohickey": "#7172AD",
+          "Gadget": "#A989C5",
+          "Gizmo": "#C7EAEA",
+          "Widget": "#227FD2"
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "f9RqS8HspKvcsGEH24_Af",
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "PS7GW5IfD3ov0haogAPLu",
+      "entity_id": "T3G6Is3XniVtrqzKbZ2vx",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 7,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 7,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 7,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 7,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 15,
+      "series": [],
+      "size_x": 24,
+      "size_y": 7,
+      "visualization_settings": {
+        "card.title": "Value of orders over time (before taxes)",
+        "column_settings": null,
+        "graph.dimensions": [
+          "CREATED_AT",
+          "CATEGORY"
+        ],
+        "graph.metrics": [
+          "sum"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "graph.x_axis.labels_enabled": false,
+        "series_settings": {
+          "Doohickey": {
+            "color": "#7172AD"
+          },
+          "Gadget": {
+            "color": "#A989C5"
+          },
+          "Gizmo": {
+            "color": "#C7EAEA"
+          },
+          "Widget": {
+            "color": "#227FD2"
+          }
+        },
+        "stackable.stack_type": "stacked"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "BP4o72CSvPOTLe5Nk6twf",
+      "col": 17,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "z5IymDhXzRY2kF79LxQIN",
+      "entity_id": "3d1iG7J48euO467UN-hCL",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 8,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 8,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 8,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 8,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 9,
+      "series": [],
+      "size_x": 7,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.description": "Compares the total number of orders placed for this product this month with the previous period",
+        "column_settings": null
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "fPYpb3KcV2TJZLRw-L841",
+      "col": 18,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "PS7GW5IfD3ov0haogAPLu",
+      "entity_id": "1mSLJrWPvehXkcIzoK1Yq",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 24,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 1,
+      "series": [],
+      "size_x": 6,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.description": "Compares the number of unique customers placing orders this month with the previous period",
+        "card.title": "Unique customers per month",
+        "column_settings": null
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "hBnes5i3LGSYZeoGIYwvm",
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "TKyJ0onLUPOuZgVfwZfU1",
+      "entity_id": "M89Lh2AQnAunejYWXNUeT",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 9,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 9,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 9,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 9,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 1,
+      "series": [],
+      "size_x": 9,
+      "size_y": 6,
+      "visualization_settings": {
+        "column_settings": null
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "t1rQijQdCIZoQI6bhwBEG",
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "TKyJ0onLUPOuZgVfwZfU1",
+      "entity_id": "JDDgMLIDoRDC24ufF2yeI",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 10,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 10,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "CREATED_AT",
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 10,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 10,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "join-alias": "People - User"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 20,
+      "series": [],
+      "size_x": 9,
+      "size_y": 6,
+      "visualization_settings": {
+        "column_settings": null,
+        "graph.dimensions": [
+          "Age",
+          "SOURCE"
+        ],
+        "graph.label_value_formatting": "compact",
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "graph.show_values": true,
+        "graph.x_axis.axis_enabled": true,
+        "graph.x_axis.labels_enabled": true,
+        "graph.x_axis.scale": "ordinal",
+        "graph.y_axis.auto_range": true,
+        "graph.y_axis.labels_enabled": false,
+        "graph.y_axis.title_text": "Orders",
+        "stackable.stack_type": "stacked",
+        "table.cell_column": "SUBTOTAL"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "avC199ZiYvp1aIWdejfFf",
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "TKyJ0onLUPOuZgVfwZfU1",
+      "entity_id": "3f4Uo5mlklic7PBxY32DZ",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 11,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "join-alias": "Products"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 11,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "CREATED_AT",
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 11,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "join-alias": "Products"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 11,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 14,
+      "series": [],
+      "size_x": 9,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.title": "Product category orders per age group",
+        "graph.dimensions": [
+          "Age",
+          "CATEGORY"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "graph.show_values": true,
+        "graph.x_axis.axis_enabled": true,
+        "graph.x_axis.labels_enabled": true,
+        "graph.x_axis.scale": "ordinal",
+        "graph.y_axis.auto_range": true,
+        "graph.y_axis.labels_enabled": false,
+        "series_settings": {
+          "Doohickey": {
+            "color": "#7172AD"
+          },
+          "Gadget": {
+            "color": "#A989C5"
+          },
+          "Gizmo": {
+            "color": "#C7EAEA"
+          },
+          "Widget": {
+            "color": "#227FD2"
+          }
+        },
+        "stackable.stack_type": "stacked",
+        "table.cell_column": "SUBTOTAL"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "evd6f3MoDUtTNsoXHwu0T",
+      "col": 6,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "PS7GW5IfD3ov0haogAPLu",
+      "entity_id": "Cc0jFy1OZZbmC1CEA4eu2",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 12,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 12,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 12,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 12,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 4,
+      "series": [],
+      "size_x": 18,
+      "size_y": 5,
+      "visualization_settings": {
+        "card.description": "Matches the cumulative revenue  month over month with the number of orders placed each month",
+        "column_settings": null,
+        "graph.dimensions": [
+          "CREATED_AT"
+        ],
+        "graph.metrics": [
+          "sum",
+          "sum_2"
+        ],
+        "graph.show_trendline": false,
+        "graph.x_axis.labels_enabled": false,
+        "graph.x_axis.title_text": "Orders date",
+        "graph.y_axis.labels_enabled": false,
+        "graph.y_axis.title_text": "Revenue",
+        "series_settings": {
+          "sum": {
+            "display": "line",
+            "line.interpolate": "linear",
+            "line.marker_enabled": false,
+            "show_series_values": true,
+            "title": "Revenue"
+          },
+          "sum_2": {
+            "color": "#51528D",
+            "title": "Number of orders"
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "Bkb4GEr5dH2_LbDOKhObR",
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "PS7GW5IfD3ov0haogAPLu",
+      "entity_id": "e-8h-dZx-B9RYybRoZzci",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 13,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 13,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 13,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 13,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 4,
+      "series": [],
+      "size_x": 6,
+      "size_y": 5,
+      "visualization_settings": {
+        "card.description": "Compares the current total in revenue with the set goal for the quarter",
+        "column_settings": {
+          "[\"name\",\"sum\"]": {
+            "number_style": "currency"
+          }
+        },
+        "progress.goal": 250000
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "-BcEE22ptXyDOgUNRqyct",
+      "col": 17,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "z5IymDhXzRY2kF79LxQIN",
+      "entity_id": "iSUCvbFniuVFlN5NDV3Y7",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 22,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 22,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 19,
+      "series": [],
+      "size_x": 7,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.description": "Indicates the average customer review of our products",
+        "card.title": "Average product rating overall",
+        "column_settings": null,
+        "gauge.segments": [
+          {
+            "color": "#EF8C8C",
+            "label": "awful",
+            "max": 1,
+            "min": 0
+          },
+          {
+            "color": "#F2A86F",
+            "label": "bad",
+            "max": 2,
+            "min": 1
+          },
+          {
+            "color": "#F9D45C",
+            "label": "alright",
+            "max": 3,
+            "min": 2
+          },
+          {
+            "color": "#A7D07C",
+            "label": "good",
+            "max": 4,
+            "min": 3
+          },
+          {
+            "color": "#689636",
+            "label": "great",
+            "max": 5,
+            "min": 4
+          }
+        ],
+        "table.cell_column": "avg"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "NdqehUq98ebQ4H_-1d9v3",
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "z5IymDhXzRY2kF79LxQIN",
+      "entity_id": "ndNZEBY96LMGGWefgnG3o",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 14,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 14,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 14,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 14,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 13,
+      "series": [],
+      "size_x": 17,
+      "size_y": 5,
+      "visualization_settings": {
+        "card.description": "Compares the orders of each category quarter over quarter",
+        "card.title": "Numbers of orders by category per quarter",
+        "column_settings": null,
+        "graph.dimensions": [
+          "CREATED_AT",
+          "CATEGORY"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.x_axis.labels_enabled": false,
+        "graph.x_axis.title_text": "Created At",
+        "graph.y_axis.title_text": "Number of orders",
+        "series_settings": {
+          "Doohickey": {
+            "color": "#7172AD"
+          },
+          "Gadget": {
+            "color": "#A989C5"
+          },
+          "Gizmo": {
+            "color": "#C7EAEA"
+          },
+          "Widget": {
+            "color": "#227FD2"
+          }
+        }
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "d3KPtMfbe0IIK0MDrHTNn",
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "PS7GW5IfD3ov0haogAPLu",
+      "entity_id": "dX_lc-n9uNhVcRmbhZfdQ",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 15,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 15,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 15,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 15,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 1,
+      "series": [],
+      "size_x": 6,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.description": "Compares the total revenue this quarter with the previous period",
+        "column_settings": null
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "-mfPjg0QOoIKbqJS0SYne",
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "PS7GW5IfD3ov0haogAPLu",
+      "entity_id": "gXkQgKfsYghl-XjDpSefW",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 16,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 16,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 16,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 16,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 9,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.description": "Orders placed per quarter broken down by source and formatted to highlight best and worst quarters",
+        "column_settings": null,
+        "graph.dimensions": [
+          "CREATED_AT",
+          "SOURCE"
+        ],
+        "graph.metrics": [
+          "sum"
+        ],
+        "graph.series_labels": [
+          null
+        ],
+        "pivot.show_row_totals": true,
+        "pivot_table.column_split": {
+          "columns": [
+            [
+              "field",
+              45,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ]
+          ],
+          "rows": [
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime",
+                "temporal-unit": "quarter"
+              }
+            ]
+          ],
+          "values": [
+            [
+              "aggregation",
+              0
+            ]
+          ]
+        },
+        "pivot_table.column_widths": {
+          "leftHeaderWidths": [
+            141
+          ],
+          "totalLeftHeaderWidths": 141,
+          "valueHeaderWidths": {
+            "0": 234,
+            "1": 263,
+            "2": 254,
+            "3": 236.3636474609375,
+            "4": 227,
+            "5": 170
+          }
+        },
+        "stackable.stack_type": "stacked",
+        "table.column_formatting": [
+          {
+            "color": "#FBE499",
+            "colors": [
+              "#ED6E6E",
+              "#FFFFFF",
+              "#84BB4C"
+            ],
+            "columns": [
+              "sum"
+            ],
+            "highlight_row": false,
+            "max_type": null,
+            "max_value": 100,
+            "min_type": null,
+            "min_value": 0,
+            "operator": "<",
+            "type": "range",
+            "value": 1000
+          }
+        ]
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "P-shWkp5lozD2nuo5xusW",
+      "col": 9,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "TKyJ0onLUPOuZgVfwZfU1",
+      "entity_id": "f-hh5qVJwpgrj3_JWDtpX",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 17,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 17,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 17,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 17,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "join-alias": "People - User"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 14,
+      "series": [],
+      "size_x": 15,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.description": "Shows a distribution of orders broken down by product category across our customers' age groups",
+        "card.title": "Product category orders per individual age",
+        "column_settings": null,
+        "graph.dimensions": [
+          "Age",
+          "CATEGORY"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "graph.x_axis.scale": "ordinal",
+        "graph.y_axis.title_text": "Orders by category",
+        "series_settings": {
+          "Doohickey": {
+            "color": "#7172AD"
+          },
+          "Gadget": {
+            "color": "#A989C5"
+          },
+          "Gizmo": {
+            "color": "#C7EAEA"
+          },
+          "Widget": {
+            "color": "#227FD2"
+          }
+        },
+        "stackable.stack_type": "normalized"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "wd1PEi_Z217Gr-ceeZSNj",
+      "col": 6,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "PS7GW5IfD3ov0haogAPLu",
+      "entity_id": "NGar3mVnCROw5p7djSBa3",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 18,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 18,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 18,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 18,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 1,
+      "series": [],
+      "size_x": 6,
+      "size_y": 3,
+      "visualization_settings": {
+        "card.description": "Compares the total discount given this quarter with the previous period",
+        "card.title": "Discount given per quarter",
+        "column_settings": null
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "cO53DQ6k0DueW5Aglwp7Y",
+      "col": 0,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "z5IymDhXzRY2kF79LxQIN",
+      "entity_id": "OMCqqRP9CQTT3pSp6sfo5",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 19,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 19,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 19,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 19,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "source-field": 43
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 19,
+      "series": [],
+      "size_x": 17,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.description": "Shows the distribution of the product categories along the scale of customer ratings",
+        "card.title": "Customer Satisfaction per category",
+        "column_settings": null,
+        "graph.dimensions": [
+          "RATING",
+          "CATEGORY"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "graph.x_axis.title_text": "Customer Ratings",
+        "graph.y_axis.auto_range": true,
+        "graph.y_axis.title_text": "Orders by category",
+        "series_settings": {
+          "Doohickey": {
+            "color": "#7172AD"
+          },
+          "Gadget": {
+            "color": "#A989C5"
+          },
+          "Gizmo": {
+            "color": "#C7EAEA"
+          },
+          "Widget": {
+            "color": "#227FD2"
+          },
+          "count": {
+            "color": "#999AC4"
+          }
+        },
+        "stackable.stack_type": "stacked",
+        "table.pivot": false
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "DDT6zuq6O7bsnw1UEWtQQ",
+      "col": 9,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "TKyJ0onLUPOuZgVfwZfU1",
+      "entity_id": "s_DDqee44Wp_gHh16bAuR",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 21,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 21,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 21,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 21,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "join-alias": "People - User"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 20,
+      "series": [],
+      "size_x": 15,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.description": "Shows a distribution of orders broken down by source across our customers' age groups",
+        "card.title": "Orders by source per individual age",
+        "column_settings": null,
+        "graph.dimensions": [
+          "Age",
+          "SOURCE"
+        ],
+        "graph.metrics": [
+          "count"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "graph.x_axis.axis_enabled": true,
+        "graph.x_axis.scale": "ordinal",
+        "graph.y_axis.title_text": "Orders by Sources",
+        "stackable.stack_type": "normalized"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "KMq74J_Gh78vIimczx0LH",
+      "col": 9,
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "dashboard_tab_id": "TKyJ0onLUPOuZgVfwZfU1",
+      "entity_id": "VjAahFlVkOA0hp1LVBrH5",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 25,
+          "parameter_id": "fc2cd1be",
+          "target": [
+            "dimension",
+            [
+              "field",
+              60,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 25,
+          "parameter_id": "afa56954",
+          "target": [
+            "dimension",
+            [
+              "field",
+              41,
+              {
+                "base-type": "type/DateTime"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 25,
+          "parameter_id": "5eeec658",
+          "target": [
+            "dimension",
+            [
+              "field",
+              58,
+              {
+                "base-type": "type/Text",
+                "source-field": 40
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 25,
+          "parameter_id": "512c560a",
+          "target": [
+            "dimension",
+            [
+              "field",
+              48,
+              {
+                "base-type": "type/Text",
+                "join-alias": "People - User"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 8,
+      "series": [],
+      "size_x": 15,
+      "size_y": 6,
+      "visualization_settings": {
+        "card.description": "Shows a distribution of revenue in age groups",
+        "card.title": "Revenue per individual age",
+        "column_settings": null,
+        "graph.dimensions": [
+          "Age"
+        ],
+        "graph.label_value_formatting": "compact",
+        "graph.metrics": [
+          "sum"
+        ],
+        "graph.series_order": null,
+        "graph.series_order_dimension": null,
+        "graph.show_values": true,
+        "graph.x_axis.scale": "ordinal",
+        "graph.y_axis.title_text": "Total revenue",
+        "stackable.stack_type": "stacked"
+      }
+    }
+  ],
+  "description": "Quickly take an overview of an e-commerce reseller business and dive into separate tabs that focus on top selling products and demographic insights. Each vendor can log in as a tenant and see their own data sandboxed from all the others.",
+  "embedding_params": null,
+  "enable_embedding": false,
+  "entity_id": "DlK2jXoIHPXyVkEuo6Uy6",
+  "initially_published_at": null,
+  "made_public_by_id": null,
+  "name": "E-commerce insights",
+  "parameters": [
+    {
+      "id": "fc2cd1be",
+      "isMultiSelect": false,
+      "name": "Vendor",
+      "sectionId": "string",
+      "slug": "vendor",
+      "type": "string/="
+    },
+    {
+      "id": "afa56954",
+      "name": "Date Range",
+      "sectionId": "date",
+      "slug": "date_range",
+      "type": "date/range"
+    },
+    {
+      "id": "5eeec658",
+      "name": "Category",
+      "sectionId": "string",
+      "slug": "category",
+      "type": "string/=",
+      "values_query_type": "list"
+    },
+    {
+      "id": "512c560a",
+      "name": "Location",
+      "sectionId": "location",
+      "slug": "location",
+      "type": "string/=",
+      "values_query_type": "search"
+    }
+  ],
+  "points_of_interest": null,
+  "position": null,
+  "public_uuid": null,
+  "show_in_getting_started": false,
+  "tabs": [
+    {
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "entity_id": "PS7GW5IfD3ov0haogAPLu",
+      "name": "Overview",
+      "position": 0
+    },
+    {
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "entity_id": "z5IymDhXzRY2kF79LxQIN",
+      "name": "Portfolio performance",
+      "position": 1
+    },
+    {
+      "created_at": "2024-08-12T11:04:30.816921Z",
+      "entity_id": "TKyJ0onLUPOuZgVfwZfU1",
+      "name": "Demographics",
+      "position": 2
+    }
+  ],
+  "width": "full"
+}

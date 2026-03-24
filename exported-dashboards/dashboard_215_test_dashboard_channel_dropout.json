@@ -1,0 +1,586 @@
+{
+  "archived": false,
+  "archived_directly": false,
+  "auto_apply_filters": true,
+  "caveats": null,
+  "collection_id": "g3BZYhe53Z8Oveokg8v3w",
+  "collection_position": null,
+  "created_at": "2025-10-22T13:14:56.913087Z",
+  "creator_id": "doug.dominiak@siden.io",
+  "dashcards": [
+    {
+      "action_id": null,
+      "card_id": "Hr24cMl4J5s4Ex0m3Yvls",
+      "col": 0,
+      "created_at": "2025-10-22T13:15:13.478130Z",
+      "dashboard_tab_id": null,
+      "entity_id": "YyNWJ8bV56sq4HgmGcraj",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 762,
+          "parameter_id": "d9c8fb7b",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "interval_start",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 762,
+          "parameter_id": "7f355a54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 762,
+          "parameter_id": "31d8f8ba",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 15,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {
+        "column_settings": {
+          "[\"name\",\"interval_start\"]": {
+            "date_abbreviate": true,
+            "time_enabled": "seconds"
+          }
+        },
+        "table.cell_column": "preroll_segments_served",
+        "table.columns": [
+          {
+            "enabled": true,
+            "name": "interval_start"
+          },
+          {
+            "enabled": true,
+            "name": "sen_id"
+          },
+          {
+            "enabled": true,
+            "name": "d2.sen_id"
+          },
+          {
+            "enabled": true,
+            "name": "sp_id"
+          },
+          {
+            "enabled": true,
+            "name": "timestamp"
+          },
+          {
+            "enabled": true,
+            "name": "d2.timestamp"
+          },
+          {
+            "enabled": true,
+            "name": "stream_name"
+          },
+          {
+            "enabled": true,
+            "name": "manifests_served"
+          },
+          {
+            "enabled": true,
+            "name": "preroll_segments_served"
+          },
+          {
+            "enabled": true,
+            "name": "live_segments_served"
+          },
+          {
+            "enabled": true,
+            "name": "placard_segments_served"
+          },
+          {
+            "enabled": true,
+            "name": "preroll_segments_duration"
+          },
+          {
+            "enabled": true,
+            "name": "live_segments_duration"
+          },
+          {
+            "enabled": true,
+            "name": "placard_segments_duration"
+          },
+          {
+            "enabled": true,
+            "name": "switched_to_placard"
+          },
+          {
+            "enabled": true,
+            "name": "switched_to_live"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_sent"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_sent_unique"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_unique"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_send_loss"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_loss"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_retrans"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_retrans"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_sent_ack"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_ack"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_sent_nak"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_nak"
+          },
+          {
+            "enabled": true,
+            "name": "srt_mbps_send_rate"
+          },
+          {
+            "enabled": true,
+            "name": "srt_mbps_recv_rate"
+          },
+          {
+            "enabled": true,
+            "name": "srt_us_snd_duration"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_reorder_distance"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_belated"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_snd_drop"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_drop"
+          },
+          {
+            "enabled": true,
+            "name": "srt_pkt_recv_undecrypt"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_sent"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_recv"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_sent_unique"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_recv_unique"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_recv_loss"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_retrans"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_recv_retrans"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_recv_belated"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_send_drop"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_recv_drop"
+          },
+          {
+            "enabled": true,
+            "name": "srt_byte_recv_undecrypt"
+          },
+          {
+            "enabled": true,
+            "name": "udp_pkt_sent"
+          },
+          {
+            "enabled": true,
+            "name": "rtt_ms"
+          },
+          {
+            "enabled": true,
+            "name": "rtt_var_ms"
+          },
+          {
+            "enabled": true,
+            "name": "p0_tput_mbps"
+          },
+          {
+            "enabled": true,
+            "name": "p25_tput_mbps"
+          },
+          {
+            "enabled": true,
+            "name": "p50_tput_mbps"
+          },
+          {
+            "enabled": true,
+            "name": "p75_tput_mbps"
+          },
+          {
+            "enabled": true,
+            "name": "p100_tput_mbps"
+          },
+          {
+            "enabled": true,
+            "name": "p0_rtt_ms"
+          },
+          {
+            "enabled": true,
+            "name": "p25_rtt_ms"
+          },
+          {
+            "enabled": true,
+            "name": "p50_rtt_ms"
+          },
+          {
+            "enabled": true,
+            "name": "p75_rtt_ms"
+          },
+          {
+            "enabled": true,
+            "name": "p100_rtt_ms"
+          },
+          {
+            "enabled": true,
+            "name": "reporting_interval_secs"
+          },
+          {
+            "enabled": true,
+            "name": "downloaded_bytes"
+          },
+          {
+            "enabled": true,
+            "name": "hls_segment_buffer"
+          }
+        ],
+        "table.pivot_column": "manifests_served"
+      }
+    },
+    {
+      "action_id": null,
+      "card_id": "4kv2bdVkTQtVVhqCd6xxp",
+      "col": 0,
+      "created_at": "2025-10-22T13:35:38.630552Z",
+      "dashboard_tab_id": null,
+      "entity_id": "2Lef4shbg2oQSOn5gTBL5",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 764,
+          "parameter_id": "7f355a54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 764,
+          "parameter_id": "31d8f8ba",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 764,
+          "parameter_id": "d9c8fb7b",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "timestamp",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 26,
+      "series": [],
+      "size_x": 24,
+      "size_y": 11,
+      "visualization_settings": {}
+    },
+    {
+      "action_id": null,
+      "card_id": "FeSpId8FO7_fPj1j2lDME",
+      "col": 0,
+      "created_at": "2025-10-22T14:36:50.208621Z",
+      "dashboard_tab_id": null,
+      "entity_id": "EBhGC0e7yr1yditaJkc0j",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 766,
+          "parameter_id": "d9c8fb7b",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "interval_start",
+              {
+                "base-type": "type/DateTimeWithLocalTZ"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 766,
+          "parameter_id": "7f355a54",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "sen_id",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        },
+        {
+          "card_id": 766,
+          "parameter_id": "31d8f8ba",
+          "target": [
+            "dimension",
+            [
+              "field",
+              "stream_name",
+              {
+                "base-type": "type/Text"
+              }
+            ],
+            {
+              "stage-number": 0
+            }
+          ]
+        }
+      ],
+      "row": 6,
+      "series": [],
+      "size_x": 24,
+      "size_y": 9,
+      "visualization_settings": {}
+    },
+    {
+      "action_id": null,
+      "card_id": "PmB3A3Kvb1ZWIzsMfvYpa",
+      "col": 0,
+      "created_at": "2025-10-23T07:28:37.124334Z",
+      "dashboard_tab_id": null,
+      "entity_id": "QTAGKcmHkwc3_D6yjY2_s",
+      "inline_parameters": [],
+      "parameter_mappings": [
+        {
+          "card_id": 769,
+          "parameter_id": "31d8f8ba",
+          "target": [
+            "variable",
+            [
+              "template-tag",
+              "StreamName"
+            ]
+          ]
+        },
+        {
+          "card_id": 769,
+          "parameter_id": "7f355a54",
+          "target": [
+            "variable",
+            [
+              "template-tag",
+              "SenId"
+            ]
+          ]
+        },
+        {
+          "card_id": 769,
+          "parameter_id": "98e331a2",
+          "target": [
+            "variable",
+            [
+              "template-tag",
+              "DateRangeStart"
+            ]
+          ]
+        },
+        {
+          "card_id": 769,
+          "parameter_id": "57dbdfba",
+          "target": [
+            "variable",
+            [
+              "template-tag",
+              "DateRangeEnd"
+            ]
+          ]
+        }
+      ],
+      "row": 0,
+      "series": [],
+      "size_x": 24,
+      "size_y": 6,
+      "visualization_settings": {}
+    }
+  ],
+  "description": null,
+  "embedding_params": null,
+  "enable_embedding": false,
+  "entity_id": "6izEYWx0oVVp_FmT9lYjX",
+  "initially_published_at": null,
+  "made_public_by_id": null,
+  "name": "Test Dashboard - Channel Dropout",
+  "parameters": [
+    {
+      "id": "d9c8fb7b",
+      "name": "Date Range",
+      "sectionId": "date",
+      "slug": "date_range",
+      "type": "date/all-options"
+    },
+    {
+      "id": "7f355a54",
+      "name": "SEN ID",
+      "sectionId": "string",
+      "slug": "sen_id",
+      "type": "string/="
+    },
+    {
+      "id": "31d8f8ba",
+      "name": "Stream Name",
+      "sectionId": "string",
+      "slug": "stream_name",
+      "type": "string/="
+    },
+    {
+      "id": "98e331a2",
+      "name": "Custom Start Date",
+      "sectionId": "date",
+      "slug": "custom_start_date",
+      "type": "date/single"
+    },
+    {
+      "id": "57dbdfba",
+      "name": "Custom End Date",
+      "sectionId": "date",
+      "slug": "custom_end_date",
+      "type": "date/single"
+    }
+  ],
+  "points_of_interest": null,
+  "position": null,
+  "public_uuid": null,
+  "show_in_getting_started": false,
+  "tabs": [],
+  "width": "fixed"
+}
