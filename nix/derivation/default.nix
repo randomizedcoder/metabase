@@ -186,7 +186,7 @@ let
     src = srcFor driverFilter;
   };
 
-  # Stage 3: Final assembly
+  # Stage 3: Final assembly — full (with all drivers)
   uberjar = import ./uberjar.nix {
     inherit
       pkgs
@@ -202,43 +202,77 @@ let
     src = srcFor uberjarFilter;
   };
 
-  # Final package with wrapper script
-  metabase = pkgs.stdenv.mkDerivation {
-    pname = "metabase";
-    inherit version;
+  # Stage 3 (core variant): Final assembly — without bundled external drivers
+  uberjarCore = import ./uberjar.nix {
+    inherit
+      pkgs
+      lib
+      clojureDeps
+      frontend
+      staticViz
+      translations
+      version
+      edition
+      ;
+    # drivers defaults to null — no external drivers bundled
+    src = srcFor uberjarFilter;
+  };
 
-    dontUnpack = true;
+  # Helper to create a wrapped Metabase package from a given uberjar
+  mkMetabasePackage =
+    {
+      pname,
+      uberjarDrv,
+      description,
+    }:
+    pkgs.stdenv.mkDerivation {
+      inherit pname version;
 
-    nativeBuildInputs = [ pkgs.makeWrapper ];
+      dontUnpack = true;
 
-    installPhase = ''
-      runHook preInstall
+      nativeBuildInputs = [ pkgs.makeWrapper ];
 
-      mkdir -p $out/bin $out/share/metabase
+      installPhase = ''
+        runHook preInstall
 
-      # Copy the JAR
-      cp ${uberjar}/share/metabase/metabase.jar $out/share/metabase/
+        mkdir -p $out/bin $out/share/metabase
 
-      # Create wrapper script
-      makeWrapper ${jre}/bin/java $out/bin/metabase \
-        --add-flags "-jar $out/share/metabase/metabase.jar"
+        # Copy the JAR
+        cp ${uberjarDrv}/share/metabase/metabase.jar $out/share/metabase/
 
-      runHook postInstall
-    '';
+        # Create wrapper script
+        makeWrapper ${jre}/bin/java $out/bin/metabase \
+          --add-flags "-jar $out/share/metabase/metabase.jar"
 
-    meta = {
-      description = "Metabase - Business Intelligence and Embedded Analytics";
-      homepage = "https://metabase.com";
-      license = lib.licenses.agpl3Only;
-      platforms = lib.platforms.all;
-      mainProgram = "metabase";
+        runHook postInstall
+      '';
+
+      meta = {
+        inherit description;
+        homepage = "https://metabase.com";
+        license = lib.licenses.agpl3Only;
+        platforms = lib.platforms.all;
+        mainProgram = "metabase";
+      };
     };
+
+  # Final packages
+  metabase = mkMetabasePackage {
+    pname = "metabase";
+    uberjarDrv = uberjar;
+    description = "Metabase - Business Intelligence and Embedded Analytics";
+  };
+
+  metabaseCore = mkMetabasePackage {
+    pname = "metabase-core";
+    uberjarDrv = uberjarCore;
+    description = "Metabase Core - without bundled external database drivers";
   };
 
 in
 {
-  # Final package
-  inherit metabase;
+  # Final packages
+  inherit metabase metabaseCore;
 
   # Individual sub-derivations (for targeted builds)
   inherit
@@ -248,6 +282,7 @@ in
     frontend
     staticViz
     uberjar
+    uberjarCore
     ;
 
   # Driver derivations (attrset with per-driver + .all)

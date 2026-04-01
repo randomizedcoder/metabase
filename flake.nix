@@ -3,12 +3,16 @@
 # Quick start:
 #   nix develop                       - Dev shell (Java 21, Node 22, Bun, Clojure, PostgreSQL 18)
 #   nix build                         - Build metabase.jar from source
-#   nix build .#oci-x86_64            - Build OCI container (x86_64)
+#   nix build .#oci-x86_64            - Build OCI container (x86_64, full)
+#   nix build .#oci-minimal-x86_64   - Build OCI container (x86_64, no CJK fonts)
+#   nix build .#oci-core-x86_64      - Build OCI container (x86_64, core-only)
+#   nix build .#oci-clickhouse-x86_64 - Build OCI container (x86_64, core + clickhouse)
 #   nix build .#oci-aarch64           - Build OCI container (ARM64)
 #   nix build .#oci-riscv64           - Build OCI container (RISC-V 64)
 #   nix build .#tests-all             - Run all integration tests
 #   nix build .#microvm-test-x86_64   - Run NixOS VM lifecycle test (x86_64)
 #   nix build .#microvm-test-aarch64  - Run NixOS VM lifecycle test (ARM64)
+#   nix run .#check-reproducibility          - Verify bit-for-bit reproducibility
 #   nix run .#mb-lifecycle-full-test-x86_64  - Full lifecycle test with timing
 #
 # Sub-derivations (for targeted rebuilds):
@@ -16,6 +20,8 @@
 #   nix build .#static-viz            - Static visualization bundle only
 #   nix build .#translations          - i18n artifacts only
 #   nix build .#drivers               - Database drivers only
+#   nix build .#metabase-core         - Core-only (no bundled external drivers)
+#   nix build .#uberjar-core          - Core-only uberjar
 #
 # Debugging:
 #   MB_NIX_DEBUG=1 nix develop        - Debug mode with verbose env output
@@ -95,6 +101,8 @@
             metabase
             version
             ;
+          metabaseCore = derivation.metabaseCore;
+          drivers = derivation.drivers;
           jre = packagesModule.jre;
         };
 
@@ -111,6 +119,7 @@
             metabase
             nixpkgs
             ;
+          clickhouseDriver = derivation.drivers.clickhouse;
           buildSystem = system;
         };
 
@@ -133,6 +142,10 @@
           uberjar = derivation.uberjar;
           deps-clojure = derivation.clojureDeps;
           deps-frontend = derivation.frontendDeps;
+
+          # Core-only variants (no bundled external drivers)
+          metabase-core = derivation.metabaseCore;
+          uberjar-core = derivation.uberjarCore;
 
           # Individual driver derivations (nix build .#driver-clickhouse, etc.)
         }
@@ -169,6 +182,81 @@
             '';
           };
 
+          # Verify bit-for-bit reproducibility of Clojure-compiled derivations
+          check-reproducibility = pkgs.writeShellApplication {
+            name = "mb-check-reproducibility";
+            runtimeInputs = [ pkgs.diffoscope ];
+            text = ''
+              set -euo pipefail
+
+              default_targets=("translations" "uberjar" "uberjar-core" "drivers")
+              all_targets=("translations" "uberjar" "uberjar-core" "drivers" "frontend" "static-viz" "metabase" "metabase-core")
+
+              targets=("''${default_targets[@]}")
+              ROUNDS=1
+
+              while [[ $# -gt 0 ]]; do
+                case "$1" in
+                  --all) targets=("''${all_targets[@]}"); shift ;;
+                  --rounds) ROUNDS="$2"; shift 2 ;;
+                  *) shift ;;
+                esac
+              done
+
+              passed=0
+              failed=0
+              failures=()
+
+              echo "=== Metabase Nix Reproducibility Check ==="
+              echo "Rounds per target: $ROUNDS"
+              echo ""
+
+              for target in "''${targets[@]}"; do
+                echo "--- Checking .#$target ---"
+                echo "  Building (first pass)..."
+                if ! nix build ".#$target" 2>&1; then
+                  echo "  SKIP: $target failed to build"
+                  failed=$((failed + 1))
+                  failures+=("$target (build failed)")
+                  echo ""
+                  continue
+                fi
+                target_ok=true
+                for round in $(seq 1 "$ROUNDS"); do
+                  echo "  Rebuild round $round/$ROUNDS..."
+                  if ! nix build ".#$target" --rebuild 2>&1; then
+                    echo "  FAIL: $target is NOT reproducible (round $round)"
+                    echo "  Run 'diffoscope' on the two outputs for details."
+                    failed=$((failed + 1))
+                    failures+=("$target (round $round)")
+                    target_ok=false
+                    break
+                  fi
+                done
+                if $target_ok; then
+                  echo "  PASS: $target is reproducible ($ROUNDS round(s))"
+                  passed=$((passed + 1))
+                fi
+                echo ""
+              done
+
+              echo "=== Summary ==="
+              echo "  Passed: $passed"
+              echo "  Failed: $failed"
+              if [[ $failed -gt 0 ]]; then
+                echo "  Failed targets: ''${failures[*]}"
+                exit 1
+              else
+                echo "  All targets are bit-for-bit reproducible!"
+              fi
+            '';
+          };
+
+          # Verification scripts
+          verify-oci-flags = import ./nix/tests/verify-oci-flags.nix { inherit pkgs lib; };
+          verify-oci-sizes = import ./nix/tests/verify-oci-sizes.nix { inherit pkgs lib; };
+          verify-core-drivers = import ./nix/tests/verify-core-drivers.nix { inherit pkgs lib; };
+
         }
         // oci
         // microvms.packages; # Flatten OCI + lifecycle scripts into packages
@@ -198,11 +286,15 @@
           build-smoke = pkgs.runCommand "mb-test-build-smoke" { } ''
             test -f ${metabase}/bin/metabase
             test -f ${metabase}/share/metabase/metabase.jar
+            test -f ${derivation.metabaseCore}/bin/metabase
+            test -f ${derivation.metabaseCore}/share/metabase/metabase.jar
             touch $out
           '';
 
           oci-builds = pkgs.runCommand "check-oci-builds" { } ''
             test -f ${oci.oci-x86_64}
+            test -f ${oci.oci-minimal-x86_64}
+            test -f ${oci.oci-core-x86_64}
             touch $out
           '';
 

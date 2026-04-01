@@ -10,6 +10,7 @@
   lib,
   metabase,
   nixpkgs,
+  clickhouseDriver ? null,
   buildSystem ? "x86_64-linux",
 }:
 
@@ -37,6 +38,7 @@ let
         nixpkgs
         arch
         buildSystem
+        clickhouseDriver
         ;
     }
   );

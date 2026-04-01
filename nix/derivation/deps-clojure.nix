@@ -85,6 +85,13 @@ pkgs.stdenv.mkDerivation {
           (println "calc-basis resolution complete")
         '
 
+        # Pre-fetch artifacts needed for Maven version range resolution.
+        # colorize:0.1.1 POM declares org.clojure/clojure [1.2.1],[1.3.0] (exact range).
+        # Maven's nearest-wins resolves to 1.12.4 during normal dep resolution, so 1.3.0
+        # is never downloaded. But offline builds need the artifact to exist locally for
+        # the range parser. Explicitly fetch it here.
+        clojure -Sdeps '{:deps {org.clojure/clojure {:mvn/version "1.3.0"}}}' -P
+
         # Generate missing POM files for artifacts from custom repos (e.g. athena-jdbc from S3)
         # Maven/tools.deps needs POMs even for standalone JARs
         find $HOME/.m2/repository -name "*.jar" | while read jar; do
@@ -114,11 +121,25 @@ pkgs.stdenv.mkDerivation {
   '';
 
   installPhase = ''
-    # Remove non-deterministic timestamp files
-    # Note: resolver-status.properties and maven-metadata-*.xml are kept —
-    # tools.deps needs them for offline version range resolution (e.g. [1.2.1],[1.3.0])
-    # _remote.repositories is kept here but deleted later in setupClojureDeps
+    # Patch version ranges in POMs that reference unreachable repos from the Nix sandbox.
+    # colorize:0.1.1 POM declares http:// repos and org.clojure/clojure [1.2.1],[1.3.0].
+    # The resolver can't reach those repos to validate the range. Replace with a concrete
+    # version — it gets overridden by the top-level dep anyway (nearest-wins).
+    find $HOME/.m2/repository -name "*.pom" -exec \
+      sed -i 's|\[1\.2\.1\],\[1\.3\.0\]|1.3.0|g' {} \;
+
+    # Strip all non-deterministic content to make the FOD reproducible across rebuilds.
+    # 1. *.lastUpdated files — pure timestamp, no useful data
     find $HOME/.m2/repository -type f -name \*.lastUpdated -delete
+    # 2. _remote.repositories — contains download timestamps; deleted in setupClojureDeps anyway
+    find $HOME/.m2/repository -type f -name _remote.repositories -delete
+    # 3. resolver-status.properties — normalize timestamps (tools.deps needs the file
+    #    for offline version range resolution, but only cares about repo names, not timestamps)
+    find $HOME/.m2/repository -name "resolver-status.properties" -exec \
+      sed -i 's/lastUpdated=[0-9]*/lastUpdated=0/g; s/^#.*$//' {} \;
+    # 4. maven-metadata XML — normalize <lastUpdated> tags (version lists are kept)
+    find $HOME/.m2/repository -name "maven-metadata-*.xml" -exec \
+      sed -i 's/<lastUpdated>[0-9]*<\/lastUpdated>/<lastUpdated>0<\/lastUpdated>/g' {} \;
 
     mkdir -p $out
     cp -r $HOME/.m2/repository $out/repository
@@ -137,7 +158,7 @@ pkgs.stdenv.mkDerivation {
   # Fixed-output derivation settings
   outputHashMode = "recursive";
   outputHashAlgo = "sha256";
-  outputHash = "sha256-cH0XsiSngF+gnEI3oS+H0rHIk06UgAumI+fiuR0uqYs=";
+  outputHash = "sha256-2UuLqz3eC2NjJzryqGs3+geGgbnTnpOv5bdDZVwVjm8=";
 
   # Allow proxy env vars through for network access
   impureEnvVars = lib.fetchers.proxyImpureEnvVars;

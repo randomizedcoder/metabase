@@ -300,106 +300,62 @@ rec {
       };
 
       # Full lifecycle test
+      #
+      # Runs the NixOS VM test (mkVm.nix) which boots a VM, starts Metabase,
+      # and verifies health + API inside the VM.  If `nix build` succeeds,
+      # all assertions passed.  No host-side curl is needed — the VM exits
+      # after the test script completes.
       fullTest = pkgs.writeShellApplication {
         name = "mb-lifecycle-full-test-${arch}";
         runtimeInputs = [
-          pkgs.curl
-          pkgs.jq
-          pkgs.procps
           pkgs.coreutils
         ];
         text = ''
           # Colors
-          RED='\033[0;31m'
           GREEN='\033[0;32m'
-          YELLOW='\033[1;33m'
+          RED='\033[0;31m'
           NC='\033[0m'
 
           now_ms() { date +%s%3N; }
-          pass() { echo -e "  ''${GREEN}PASS: $1''${NC}"; }
-          fail() { echo -e "  ''${RED}FAIL: $1''${NC}"; exit 1; }
-          info() { echo -e "  ''${YELLOW}INFO: $1''${NC}"; }
 
           echo "========================================"
-          echo "  Metabase MicroVM Full Lifecycle Test (${arch})"
+          echo "  Metabase NixOS VM Lifecycle Test (${arch})"
           echo "========================================"
           echo ""
-
-          TEST_START_MS=$(now_ms)
-
-          PHASE0_MS=0 PHASE1_MS=0 PHASE2_MS=0
-          PHASE3_MS=0 PHASE4_MS=0 PHASE5_MS=0
-
-          # Phase 0: Build
-          echo "--- Phase 0: Build (timeout: ${toString timeouts.build}s) ---"
-          PHASE_START_MS=$(now_ms)
-
-          if ! timeout ${toString timeouts.build} nix build .#microvm-test-${arch} --print-out-paths --no-link 2>&1; then
-            fail "Build failed"
-          fi
-
-          PHASE_END_MS=$(now_ms)
-          PHASE0_MS=$((PHASE_END_MS - PHASE_START_MS))
-          pass "Built in ''${PHASE0_MS}ms"
+          echo "Running NixOS VM test (health check + API smoke inside VM)..."
+          echo "Timeout: ${toString timeouts.build}s"
           echo ""
 
-          # Phase 1: Health check poll
-          echo "--- Phase 1: Wait for Metabase Health (timeout: ${toString timeouts.metabaseStart}s) ---"
-          PHASE_START_MS=$(now_ms)
-          TIMEOUT=${toString timeouts.metabaseStart}
-          WAITED=0
+          START_MS=$(now_ms)
 
-          while ! curl -sf ${constants.healthEndpoint} 2>/dev/null | grep -q ok; do
-            sleep ${toString constants.pollInterval}
-            WAITED=$((WAITED + ${toString constants.pollInterval}))
-            if [ "$WAITED" -ge "$TIMEOUT" ]; then
-              fail "Health check timed out after $TIMEOUT seconds"
-            fi
-            if [ $((WAITED % 30)) -eq 0 ]; then
-              info "Waiting for Metabase... ($WAITED/$TIMEOUT s)"
-            fi
-          done
+          # Run the NixOS VM test.  The test boots a full VM with PostgreSQL,
+          # starts Metabase, and verifies: health, API version, DB migrations,
+          # and built-in driver availability.
+          if timeout ${toString timeouts.build} nix build .#microvm-test-${arch} --no-link 2>&1 \
+             && OUT=$(nix build .#microvm-test-${arch} --print-out-paths --no-link 2>/dev/null); then
+            END_MS=$(now_ms)
+            ELAPSED_MS=$((END_MS - START_MS))
+            echo ""
 
-          PHASE_END_MS=$(now_ms)
-          PHASE1_MS=$((PHASE_END_MS - PHASE_START_MS))
-          pass "Metabase healthy in ''${PHASE1_MS}ms"
-          echo ""
-
-          # Phase 2: API smoke test
-          echo "--- Phase 2: API Smoke Test ---"
-          PHASE_START_MS=$(now_ms)
-
-          RESPONSE=$(timeout ${toString timeouts.apiTest} curl -sf ${constants.setupEndpoint} 2>/dev/null || true)
-          VERSION=$(echo "$RESPONSE" | jq -r '.version.tag // empty' 2>/dev/null || true)
-
-          if [ -n "$VERSION" ]; then
-            pass "API version: $VERSION"
+            # Surface application-layer test results from the VM log
+            echo "--- Application-layer verification (inside VM) ---"
+            nix log "$OUT" 2>/dev/null | grep -E '(PASS:|PERF:|All application|=== Query|=== Column|----)' || true
+            echo "---"
+            echo ""
+            echo -e "  ''${GREEN}PASS: NixOS VM lifecycle test completed in ''${ELAPSED_MS}ms''${NC}"
           else
-            fail "Could not get API version"
+            END_MS=$(now_ms)
+            ELAPSED_MS=$((END_MS - START_MS))
+            echo ""
+            echo -e "  ''${RED}FAIL: NixOS VM lifecycle test failed after ''${ELAPSED_MS}ms''${NC}"
+            echo ""
+            echo "--- Last 40 lines of VM log ---"
+            FAIL_OUT=$(nix build .#microvm-test-${arch} --print-out-paths --no-link 2>/dev/null || true)
+            if [ -n "$FAIL_OUT" ]; then
+              nix log "$FAIL_OUT" 2>/dev/null | tail -40 || true
+            fi
+            exit 1
           fi
-
-          PHASE_END_MS=$(now_ms)
-          PHASE2_MS=$((PHASE_END_MS - PHASE_START_MS))
-          echo ""
-
-          # Summary
-          TEST_END_MS=$(now_ms)
-          TOTAL_TIME_MS=$((TEST_END_MS - TEST_START_MS))
-
-          echo "========================================"
-          echo -e "  ''${GREEN}Full Lifecycle Test Complete''${NC}"
-          echo "========================================"
-          echo ""
-          echo "  Timing Summary"
-          echo "  ─────────────────────────────────────"
-          printf "  %-24s %10s\n" "Phase" "Time (ms)"
-          echo "  ─────────────────────────────────────"
-          printf "  %-24s %10d\n" "0: Build" "$PHASE0_MS"
-          printf "  %-24s %10d\n" "1: Health Check" "$PHASE1_MS"
-          printf "  %-24s %10d\n" "2: API Smoke Test" "$PHASE2_MS"
-          echo "  ─────────────────────────────────────"
-          printf "  %-24s %10d\n" "TOTAL" "$TOTAL_TIME_MS"
-          echo "  ─────────────────────────────────────"
         '';
       };
     };

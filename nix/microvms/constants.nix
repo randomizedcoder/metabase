@@ -15,7 +15,7 @@ rec {
   #   riscv64: 23620-23629
   #
   # Within each block:
-  #   +0 = Metabase HTTP (3000 forwarded)
+  #   +0 = Metabase HTTP (30000 forwarded)
   #   +1 = reserved
   #
   portBase = 23600;
@@ -142,7 +142,7 @@ rec {
   # Metabase-specific endpoints
   # ==========================================================================
 
-  healthEndpoint = "http://localhost:3000/api/health";
-  setupEndpoint = "http://localhost:3000/api/session/properties";
-  metabasePort = 3000;
+  healthEndpoint = "http://localhost:30000/api/health";
+  setupEndpoint = "http://localhost:30000/api/session/properties";
+  metabasePort = 30000;
 }

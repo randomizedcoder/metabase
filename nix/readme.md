@@ -11,12 +11,20 @@ Reproducible builds, development environments, and container images for Metabase
 - [Module Structure](#module-structure)
 - [Sub-Derivation Pipeline](#sub-derivation-pipeline)
 - [Source Filtering](#source-filtering)
+- [Reproducibility](#reproducibility)
+- [Dependency Pinning](#dependency-pinning)
 - [Dev Shell](#dev-shell)
 - [Building](#building)
 - [OCI Containers](#oci-containers)
+  - [Per-Driver Images](#per-driver-images)
+  - [Font Variants](#font-variants)
+  - [JVM Configuration](#jvm-configuration)
+- [Core-Only Builds and Mountable Drivers](#core-only-builds-and-mountable-drivers)
 - [Multi-Architecture Support](#multi-architecture-support)
 - [MicroVM Lifecycle Tests](#microvm-lifecycle-tests)
 - [Integration Tests](#integration-tests)
+- [Verification Scripts](#verification-scripts)
+- [Custom JRE with jlink (Future Optimization)](#custom-jre-with-jlink-future-optimization)
 - [Troubleshooting](#troubleshooting)
 
 ## Background
@@ -105,13 +113,14 @@ nix build .#oci-x86_64
 | `derivation/frontend.nix` | Frontend build (rspack + shadow-cljs) | `frontend/`, `src/` |
 | `derivation/static-viz.nix` | Static visualization bundle (rspack) | `frontend/`, `src/` |
 | `derivation/drivers.nix` | Per-driver JAR builds (17 derivations) | `modules/`, `src/` |
-| `derivation/uberjar.nix` | Final JAR assembly | `src/` |
+| `derivation/uberjar.nix` | Final JAR assembly (with deterministic repack) | `src/` |
+| `derivation/NormalizeProxyClasses.java` | ASM-based proxy class bytecode normalizer | — |
 | `derivation/lib.nix` | Shared build helpers (frontendBuildInputs, setupClojureDeps, etc.) | — |
 | `derivation/patch-git-deps.sh` | Patches git deps for offline builds | — |
 | `derivation/patch-mvn-repos.sh` | Patches Maven repo URLs for offline builds | — |
 | `derivation/default.nix` | Orchestrator: source filtering + wiring | — |
-| `oci/default.nix` | Multi-arch OCI container images | — |
-| `oci/layers.nix` | Layer decomposition strategy | — |
+| `oci/default.nix` | Multi-arch OCI container images (full, minimal, core, per-driver) | — |
+| `oci/layers.nix` | Layer decomposition strategy (with CJK font toggle) | — |
 | `microvms/constants.nix` | Ports, timeouts, lifecycle config | — |
 | `microvms/default.nix` | VM entry point (all architectures) | — |
 | `microvms/mkVm.nix` | NixOS test VM definition | — |
@@ -122,6 +131,9 @@ nix build .#oci-x86_64
 | `tests/api-smoke.nix` | `/api/session/properties` test | — |
 | `tests/db-migration.nix` | PostgreSQL migration test | — |
 | `tests/oci-lifecycle.nix` | OCI container lifecycle test | — |
+| `tests/verify-oci-flags.nix` | Verify JVM flags in running OCI container | — |
+| `tests/verify-oci-sizes.nix` | Compare OCI variant sizes | — |
+| `tests/verify-core-drivers.nix` | Test core-only image with mounted drivers | — |
 | `shell-functions/build.nix` | Build commands (mb-build, mb-repl, etc.) | — |
 | `shell-functions/clean.nix` | Clean commands (mb-clean-frontend, etc.) | — |
 | `shell-functions/database.nix` | PostgreSQL commands (pg-start, pg-stop, etc.) | — |
@@ -256,6 +268,94 @@ The `drivers.all` derivation is a lightweight aggregator that copies all individ
 
 **Driver dependencies**: sparksql depends on hive-like at the Clojure source level. The build system handles this automatically — each driver build has the full `modules/` source tree available.
 
+## Reproducibility
+
+Nix builds run inside a sandbox with no network access, no home directory, and no host-system leakage. Combined with pinned inputs (`flake.lock`) and filtered sources, this eliminates most sources of non-determinism. However, Java and Clojure introduce three additional challenges.
+
+### JAR Determinism
+
+JAR files are ZIP archives with embedded timestamps and non-deterministic file ordering. For smaller JARs (translations, drivers), we use nixpkgs' [`stripJavaArchivesHook`](https://github.com/NixOS/nixpkgs/issues/278518) to normalize timestamps and sort entries in the fixup phase.
+
+For the ~400MB uberjar, `stripJavaArchivesHook` is too slow (8+ hours via `strip-nondeterminism`'s entry-by-entry Perl processing). Instead, the uberjar build uses a deterministic extract-filter-repack: extract the JAR, strip AOT-shadowed source files, normalize filesystem timestamps, and repack with JDK 21's `jar --date=TIMESTAMP` flag. This produces an identical JAR directly in minutes, with no fixup phase needed.
+
+See also [Farid Zakaria's blog post on Java+Nix reproducibility](https://fzakaria.com/2021/06/27/java-nix-reproducibility.html).
+
+### Clojure Bytecode Determinism
+
+Clojure's compiler uses `Object.hashCode()` internally (via `LocalBinding`) to determine iteration order when emitting closed-over variables in bytecode. The JVM's default `hashCode` algorithm (mode 5, Marsaglia xor-shift) is seeded from memory addresses, making it non-deterministic across runs. This is a [known issue](https://ask.clojure.org/index.php/12249) in the Clojure ecosystem.
+
+We set `-XX:hashCode=2` via `JAVA_TOOL_OPTIONS` during all Clojure compilation. Mode 2 returns a constant value for all identity hash codes, which eliminates hash-based ordering variability entirely. We initially tried mode 3 (global atomic counter), but it proved insufficient — JVM background threads (JIT compiler, GC) consume counter values non-deterministically, causing 2,845 class files to differ between builds. Mode 2 reduced this to a single file.
+
+### Clojure Proxy Class Determinism
+
+The last source of non-determinism is Clojure's `proxy` macro, which uses `Class.getConstructors()` to enumerate parent class constructors. The JDK spec explicitly states this method may return constructors in any order. This produces proxy classes with non-deterministic constructor ordering in both the method table and constant pool.
+
+The uberjar build includes a post-compilation normalization step (`NormalizeProxyClasses.java`) that uses ASM to rewrite proxy class files with methods sorted by `(name, descriptor)`. ASM's ClassWriter naturally rebuilds the constant pool in visitation order, producing identical bytecode regardless of the original reflection ordering. This normalizes all ~100 proxy classes in the uberjar in under a second.
+
+### Dependency FOD Determinism
+
+The Clojure dependency FOD (`deps-clojure.nix`) downloads from Maven Central and Clojars. Several post-processing steps ensure the FOD produces identical output across rebuilds:
+
+1. **`*.lastUpdated` files** — deleted (pure timestamp, no useful data)
+2. **`_remote.repositories` files** — deleted (contain download timestamps)
+3. **`resolver-status.properties`** — timestamps normalized to 0
+4. **`maven-metadata-*.xml`** — `<lastUpdated>` tags normalized to 0
+5. **POM version ranges** — `[1.2.1],[1.3.0]` (from `colorize:0.1.1`) patched to concrete versions so offline resolution works without reaching unreachable POM-declared repos
+
+### Verifying Reproducibility
+
+Use `nix build --rebuild` to build a derivation twice and compare outputs:
+
+```bash
+# Single derivation
+nix build .#translations --rebuild
+
+# All Clojure-compiled derivations (translations, uberjar, drivers)
+nix run .#check-reproducibility
+
+# All derivations including frontend
+nix run .#check-reproducibility -- --all
+```
+
+If a check fails, use [diffoscope](https://diffoscope.org/) to inspect differences between the two builds.
+
+## Dependency Pinning
+
+All dependencies — from the JDK to every Maven artifact — are pinned to exact versions through three mechanisms.
+
+### `flake.lock` and nixpkgs pinning
+
+`flake.nix` declares `nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"`, but `flake.lock` pins to an exact commit with two fields:
+
+- **`rev`** — the exact nixpkgs git commit hash
+- **`narHash`** — SHA-256 of the Nix Archive (NAR) serialization of the nixpkgs source tree at that commit (content-based verification)
+
+This means every developer and CI build uses the same nixpkgs snapshot regardless of when `nix build` runs. To bump to a newer nixpkgs:
+
+```bash
+nix flake update    # updates flake.lock with latest nixpkgs commit + narHash
+```
+
+`flake.lock` is checked into git, so the pin is versioned and reviewable in PRs.
+
+### Transitive Java version resolution
+
+`nix/packages.nix` declares `jdk = pkgs.temurin-bin-21` and `jre = pkgs.temurin-jre-bin-21`. Since `pkgs` comes from the pinned nixpkgs commit, the exact Temurin patch version (e.g., 21.0.5+11) is determined by that commit. Different nixpkgs commits may ship different patch versions.
+
+To check which version you're pinned to:
+
+```bash
+nix develop --command java --version
+```
+
+### FOD hash verification
+
+`deps-clojure.nix` and `deps-frontend.nix` are Fixed-Output Derivations (FODs) with `outputHash` fields. These SHA-256 hashes cover the entire output directory — every Maven JAR, every npm package, byte for byte.
+
+If upstream dependencies change (e.g., a new dependency is added to `deps.edn` or `bun.lock`), the hash won't match and the build fails loudly with the expected vs actual hash. This prevents silent dependency drift.
+
+See [FOD Hash Updates](#fixed-output-derivation-fod-hash-updates) for how to update hashes after changing lockfiles.
+
 ## Dev Shell
 
 The dev shell provides all tools needed for Metabase development:
@@ -322,13 +422,26 @@ nix build .#uberjar             # Final JAR only
 
 ## OCI Containers
 
-Multi-architecture container images:
+Multi-architecture container images in several variants:
 
 ```bash
-# Build for specific architecture
+# Full image (with CJK fonts, all drivers)
 nix build .#oci-x86_64     # AMD64
 nix build .#oci-aarch64    # ARM64
 nix build .#oci-riscv64    # RISC-V 64
+
+# Minimal image (without CJK fonts)
+nix build .#oci-minimal-x86_64
+nix build .#oci-minimal-aarch64
+nix build .#oci-minimal-riscv64
+
+# Core-only image (no bundled external drivers — see Core-Only Builds below)
+nix build .#oci-core-x86_64
+
+# Per-driver image (core + one specific driver baked in)
+nix build .#oci-clickhouse-x86_64
+nix build .#oci-snowflake-x86_64
+nix build .#oci-mongo-x86_64
 
 # Load and run (x86_64 example)
 ./result | docker load
@@ -337,20 +450,128 @@ docker run -p 3000:3000 metabase:0.0.0-nix-x86_64
 
 ### Image Sizes
 
-| Architecture | Approximate Size |
-|---|---|
-| x86_64 | ~1.24 GB |
+| Variant | Size | Savings vs Full | Notes |
+|---|---|---|---|
+| `oci-x86_64` (full) | ~1290 MB | — | All drivers + CJK fonts |
+| `oci-minimal-x86_64` | ~1228 MB | ~62 MB (5%) | All drivers, no CJK fonts |
+| `oci-core-x86_64` | ~1048 MB | ~242 MB (19%) | No external drivers, with CJK fonts |
+| `oci-clickhouse-x86_64` | ~953 MB | ~337 MB (26%) | Core + one driver (representative) |
 
-The image contains ~98 Nix store path layers:
+The full image contains ~98 Nix store path layers:
 
 | Component | Approximate Size | Notes |
 |---|---|---|
 | JRE (Temurin 21) | ~200 MB | Changes with JDK updates |
 | Metabase JAR + wrapper | ~400 MB | Changes each build |
-| CJK fonts (Noto) | ~150 MB | Rarely changes |
+| CJK fonts (Noto) | ~62 MB | Rarely changes; absent in minimal variant |
 | System libraries (glib, gtk, etc.) | ~300 MB | Transitive deps of JRE/fonts |
 | Base utilities (bash, coreutils, curl) | ~50 MB | Rarely changes |
 | CA certificates, other fonts | ~50 MB | Rarely changes |
+
+### Per-Driver Images
+
+For production deployments that connect to a single database, per-driver images are the simplest option. Each one contains the core Metabase (with built-in Postgres, MySQL, H2) plus exactly one external driver baked in.
+
+```bash
+# Build and run a Snowflake-only image
+nix build .#oci-snowflake-x86_64
+./result | docker load
+docker run -p 3000:3000 metabase-snowflake:0.0.0-nix-x86_64
+```
+
+These images reuse all the same Nix store paths as the core image. Building `oci-snowflake-x86_64` after you've already built `oci-core-x86_64` takes seconds — it only adds the driver JAR layer. The same applies to disk space in the Nix store: no duplication.
+
+If you need multiple external drivers, you have three options:
+1. **Full image** (`oci-x86_64`) — all 17 drivers included
+2. **Volume mount** — use `oci-core-x86_64` and mount multiple driver JARs at `/plugins`
+3. **Custom Nix composition** — extend the layer system to combine specific drivers (see `nix/oci/default.nix`)
+
+### Font Variants
+
+The **full** images (`oci-{arch}`) include Noto CJK Sans (~62 MB), which provides Chinese, Japanese, and Korean character rendering in chart PNGs and email notifications. Metabase uses Lato as its primary font; characters Lato can't render fall back to the system `sans-serif` font. Without CJK system fonts, those characters render as tofu (empty boxes).
+
+The **minimal** images (`oci-minimal-{arch}`) omit CJK fonts. This is safe for English-language deployments that don't need CJK character rendering in charts or emails.
+
+### JVM Configuration
+
+The OCI entrypoint runs the JVM with production-tuned flags:
+
+| Flag | Purpose |
+|------|---------|
+| `-XX:+UseZGC` | Generational ZGC (JEP 439) — sub-millisecond pause times, production-ready in JDK 21 |
+| `-XX:+UseContainerSupport` | Detect cgroup memory limits |
+| `-XX:MaxRAMPercentage=75.0` | Cap heap at 75% of container memory |
+| `-XX:+CrashOnOutOfMemoryError` | Force crash dump on OOM for diagnosis |
+| `-server` | Server JIT compiler |
+| `-Dfile.encoding=UTF-8` | Consistent encoding |
+| `--add-opens java.base/java.nio=ALL-UNNAMED` | Snowflake JDBC compatibility |
+
+These flags match the Docker image entrypoint (`bin/docker/run_metabase.sh`), minus `-XX:+IgnoreUnrecognizedVMOptions` — since Nix pins the exact JRE version, all flags are known-valid, and failing fast on unknown flags is better than silently ignoring them.
+
+**Adding custom flags**: Set the `JAVA_OPTS` environment variable to pass additional JVM flags:
+
+```bash
+docker run -p 3000:3000 \
+  -e JAVA_OPTS="-Xmx4g -Dlog4j2.formatMsgNoLookups=true" \
+  metabase:0.0.0-nix-x86_64
+```
+
+**Note on ZGC**: Generational ZGC provides excellent latency for interactive workloads like Metabase dashboards. If you experience throughput issues with batch workloads, you can switch to G1GC via `JAVA_OPTS="-XX:+UseG1GC -XX:-UseZGC"`.
+
+## Core-Only Builds and Mountable Drivers
+
+The default build bundles all 17 external database drivers into the uberjar. The **core-only** variant omits these, producing a smaller JAR. Users mount only the driver JARs they need at `/plugins`.
+
+### Built-in vs external drivers
+
+Postgres, MySQL, and H2 are compiled into the core JAR — they're always available regardless of build variant.
+
+The 17 external drivers (each built as a separate JAR) are: `athena`, `bigquery-cloud-sdk`, `clickhouse`, `databricks`, `druid`, `druid-jdbc`, `hive-like`, `mongo`, `oracle`, `presto-jdbc`, `redshift`, `snowflake`, `sparksql`, `sqlite`, `sqlserver`, `starburst`, `vertica`.
+
+### Usage
+
+The easiest approach is per-driver OCI images — each one bakes in exactly one driver on top of the core image. Since they reuse the same Nix store paths as the core image, they add negligible build time and disk space.
+
+```bash
+# Per-driver OCI image (recommended for production)
+nix build .#oci-clickhouse-x86_64
+./result | docker load
+docker run -p 3000:3000 metabase-clickhouse:0.0.0-nix-x86_64
+
+# Multiple drivers? Build and load each, then pick the one you need:
+nix build .#oci-snowflake-x86_64
+nix build .#oci-mongo-x86_64
+```
+
+All 17 per-driver images are available: `oci-athena-{arch}`, `oci-bigquery-cloud-sdk-{arch}`, `oci-clickhouse-{arch}`, `oci-databricks-{arch}`, `oci-druid-{arch}`, `oci-druid-jdbc-{arch}`, `oci-hive-like-{arch}`, `oci-mongo-{arch}`, `oci-oracle-{arch}`, `oci-presto-jdbc-{arch}`, `oci-redshift-{arch}`, `oci-snowflake-{arch}`, `oci-sparksql-{arch}`, `oci-sqlite-{arch}`, `oci-sqlserver-{arch}`, `oci-starburst-{arch}`, `oci-vertica-{arch}`.
+
+Alternatively, use the core-only image with volume-mounted drivers for maximum flexibility:
+
+```bash
+# Core-only OCI image + volume mount
+nix build .#oci-core-x86_64
+./result | docker load
+
+docker run -p 3000:3000 \
+  -v $(nix build .#driver-clickhouse --print-out-paths)/plugins/clickhouse.metabase-driver.jar:/plugins/clickhouse.metabase-driver.jar \
+  metabase-core:0.0.0-nix-x86_64
+```
+
+You can also build the core-only package directly (without OCI):
+
+```bash
+nix build .#metabase-core
+nix build .#driver-clickhouse
+nix build .#driver-sqlite
+```
+
+### Size savings
+
+The core-only image is ~242 MB (19%) smaller than the full image. While the external driver JARs themselves total ~30-50 MB, the full savings come from eliminating transitive native dependencies that some drivers pull in. For production deployments connecting to a single database, this is a meaningful reduction in image pull time, storage, and attack surface — you only ship the code you use.
+
+### Composing with font variants
+
+There is no `oci-core-minimal-{arch}` variant. Users wanting both core-only and no CJK fonts can compose custom images using the Nix layer system. This can be revisited if there's demand.
 
 ## Multi-Architecture Support
 
@@ -410,6 +631,85 @@ nix run .#tests-db-migration
 # OCI lifecycle tests
 nix run .#tests-oci-x86_64
 ```
+
+## Verification Scripts
+
+Repeatable scripts for validating OCI container behavior after upgrades:
+
+| Command | Description |
+|---------|-------------|
+| `nix run .#verify-oci-flags` | Verify JVM flags (ZGC, container support) in running OCI container |
+| `nix run .#verify-oci-sizes` | Build all OCI variants and compare sizes |
+| `nix run .#verify-core-drivers` | Test core-only image with mounted driver plugins |
+
+These scripts require Docker. They build OCI images, start containers, and verify behavior end-to-end.
+
+```bash
+# Verify JVM flags after upgrading JRE or changing entrypoint
+nix run .#verify-oci-flags
+
+# Compare OCI variant sizes (useful after dependency changes)
+nix run .#verify-oci-sizes
+
+# Verify core-only image loads drivers from /plugins
+nix run .#verify-core-drivers
+```
+
+## Custom JRE with jlink (Future Optimization)
+
+`jlink` is a JDK tool that creates a custom Java runtime containing only the modules an application needs, reducing the JRE size.
+
+### How it would work
+
+A new Nix derivation would run:
+
+```bash
+jlink --module-path ${jdk}/jmods \
+  --add-modules java.base,java.desktop,java.sql,java.management,java.naming,java.logging,java.xml,jdk.crypto.ec,jdk.zipfs,jdk.unsupported \
+  --output $out
+```
+
+### Estimated savings
+
+Full JRE is ~200 MB. A custom runtime would be ~100-120 MB — modest savings because `java.desktop` (one of the larger modules) is required for AWT-based chart PNG rendering.
+
+### Required modules
+
+| Module | Reason |
+|--------|--------|
+| `java.base` | Core runtime |
+| `java.desktop` | AWT/PNG chart rendering |
+| `java.sql` | JDBC database connectivity |
+| `java.management` | JMX monitoring |
+| `java.naming` | JNDI (used by connection pooling) |
+| `java.logging` | JUL logging bridge |
+| `java.xml` | XML parsing (config, SAML) |
+| `jdk.crypto.ec` | TLS with ECDHE ciphers |
+| `jdk.zipfs` | ZIP filesystem (JAR handling) |
+| `jdk.unsupported` | `sun.misc.Unsafe` (used by various libs) |
+
+### Trade-offs
+
+- **Risk**: Plugins and third-party drivers may need modules not in the custom runtime, causing `ClassNotFoundException` at runtime. Each new driver would need testing against the custom JRE.
+- **Maintenance**: New libraries added to Metabase may require updating the module list.
+- **`java.desktop`** is one of the larger modules but is required for chart PNG rendering — it can't be removed.
+- **~7% total image size reduction** (80-100 MB savings on a ~1290 MB image) — core-only builds (~242 MB savings) provide larger and safer wins.
+
+### Recommendation
+
+Defer until OCI image size becomes a deployment bottleneck. When ready, start by running `jdeps --print-module-deps` on the uberjar to determine the exact module set:
+
+```bash
+jdeps --print-module-deps --ignore-missing-deps target/uberjar/metabase.jar
+```
+
+## TODO / Future Work
+
+- **Investigate Metabase default row limit**: Metabase caps native query results at 2,000 rows (`max-results-bare-rows`) by default. This was introduced as a safety limit but may be too aggressive for analytics workloads. Callers can override via the `constraints` parameter in `/api/dataset`, but the default affects all native queries in the UI. Consider proposing an increase (e.g., 10K or 20K) or making it user-configurable per database.
+
+- **Investigate ClickHouse JDBC driver serialization overhead**: NixOS VM benchmarks show ClickHouse queries through Metabase are significantly slower than PostgreSQL for wide result sets (6-col x 20K: 2045ms vs 694ms, nearly 3x). ClickHouse is faster for simple queries (SELECT 1: 100ms vs 130ms). The bottleneck appears to be in result set serialization/JDBC driver overhead, not query execution. This matches production observations.
+
+- **Frontend/static-viz reproducibility**: `rspack` and `shadow-cljs` produce non-deterministic output. These are the only two targets that fail `check-reproducibility --all`. Separate investigation needed.
 
 ## Troubleshooting
 

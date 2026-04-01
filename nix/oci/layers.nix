@@ -8,8 +8,11 @@
 #
 {
   pkgs,
+  lib,
   metabase,
   jre ? pkgs.temurin-jre-bin-21,
+  includeCjkFonts ? true,
+  extraPlugins ? [ ],
 }:
 
 {
@@ -22,14 +25,16 @@
     # JRE (~200MB, changes with JDK updates)
     jre
 
-    # Fonts for PDF/chart rendering (~50MB, rarely changes)
+    # Fonts for PDF/chart rendering (~50MB without CJK, ~200MB with CJK)
     pkgs.noto-fonts
-    pkgs.noto-fonts-cjk-sans
-
+  ]
+  ++ lib.optional includeCjkFonts pkgs.noto-fonts-cjk-sans
+  ++ [
     # CA certificates (~1MB, rarely changes)
     pkgs.cacert
 
     # Metabase JAR + wrapper (~400MB, changes each build)
     metabase
-  ];
+  ]
+  ++ extraPlugins;
 }
