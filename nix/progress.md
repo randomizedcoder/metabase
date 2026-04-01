@@ -123,18 +123,24 @@ Added to OCI image Env — Metabase was looking in `/app/plugins` (relative to W
 - Query body written to temp file to avoid shell quoting limits on large JSON
 - Metabase `constraints` override (`max-results` + `max-results-bare-rows`) to bypass 2K default row limit
 
-**Benchmark results** (20K rows, NixOS VM, 4GB RAM):
+**Benchmark results — column-scaling series** (20K rows, NixOS VM, 4GB RAM):
 
-| Query | PostgreSQL | ClickHouse | Delta |
-|-------|-----------|------------|-------|
-| SELECT 1 | 130ms | 100ms | 23% CH faster |
-| 20K rows x 1 col | 349ms | 226ms | 35% CH faster |
-| SUM(1..100K) | 86ms | 149ms | 74% PG faster |
-| 6 cols x 20K rows | 694ms | 2045ms | 195% PG faster |
-| 20 cols x 20K rows | 1701ms | 2976ms | 75% PG faster |
-| 20 cols x 20K (stress) | 1302ms | 2089ms | 60% PG faster |
+| Query | Cols | PG (ms) | CH (ms) | CH/PG | Overhead |
+|-------|------|---------|---------|-------|----------|
+| SELECT 1 | 1 | 102 | 90 | 0.88x | -12ms |
+| 1col x 20K | 1 | 371 | 210 | 0.57x | -161ms |
+| SUM(100K) | 1 | 92 | 137 | 1.48x | +45ms |
+| 6col x 20K | 6 | 488 | 644 | 1.32x | +156ms |
+| 20col x 20K | 20 | 1312 | 1416 | 1.08x | +104ms |
+| 50col x 20K | 50 | 2821 | 2805 | 0.99x | -16ms |
+| 100col x 20K | 100 | 3809 | 3826 | 1.00x | +17ms |
 
-**Finding**: ClickHouse is faster for simple/small queries, but Metabase's ClickHouse JDBC driver serialization adds significant overhead for wide, multi-type result sets. The 6-col case is the most dramatic (nearly 3x slower). This confirms production observations of ClickHouse returning rows quickly but Metabase taking a long time to send them to the client.
+**Key findings**:
+1. **~100ms baseline overhead** for Metabase round-trip (both engines, even SELECT 1)
+2. **ClickHouse driver adds a small fixed cost** (~100-150ms) visible at 6 cols, but constant not per-column
+3. **At 50+ cols, PG and CH are identical** — bottleneck is Metabase's core result processing
+4. **The 10x overhead reported in production** (21ms SQL → 370ms API, see [discourse thread](https://discourse.metabase.com/t/metabase-x10-times-slower-than-the-sql-query/215352)) is mostly Metabase middleware + `clojure.lang.Util.hasheq()` processing, not ClickHouse-specific
+5. JMC profiling confirms `hasheq(Object)` as the CPU hotspot in result pipeline
 
 **Fixes**:
 - MicroVM port changed from 3000 → 30000 (avoid conflicts with host Metabase)
