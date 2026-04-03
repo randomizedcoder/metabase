@@ -11,6 +11,14 @@
   :visibility :authenticated
   :audit      :getter)
 
+(defsetting ludicrous-speed
+  (deferred-tru "Ludicrous Speed (a la Spaceballs, 1987). When enabled, skips per-row statistical insights (trend analysis, anomaly detection) in the query pipeline, delivering 2-3x faster API responses. Recommended unless you rely on trend/anomaly badges on dashboard cards. They''ve gone to plaid!")
+  :type       :boolean
+  :default    false
+  :visibility :authenticated
+  :export?    true
+  :audit      :getter)
+
 ;;; the default values for the next two settings live in [[metabase.query-processor.middleware.constraints]] instead of
 ;;; as setting `:default`s... there is some sort of reason for this but I don't understand it -- Cam
 
@@ -65,6 +73,14 @@
                   (if (nil? limit)
                     limit
                     (max limit *minimum-download-row-limit*)))))
+
+(defsetting clickhouse-native
+  (deferred-tru "Use ClickHouse Client V2 binary protocol (RowBinary + LZ4) instead of JDBC for query execution. Provides ~1.8x faster queries at low column counts by eliminating JDBC/JSON overhead. Per-database ''use-native-client'' connection detail overrides this global default.")
+  :type       :boolean
+  :default    false
+  :visibility :authenticated
+  :export?    true
+  :audit      :getter)
 
 (defsetting csv-field-separator
   (deferred-tru "Character to use as field separator in CSV exports. Defaults to comma (,). Common alternatives include semicolon (;) for European locales and tab (\\t).")
